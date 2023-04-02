@@ -6,9 +6,49 @@
     <content><![CDATA[<p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/2023/04/02/example/1.png"
+                     data-src="/2023/04/02/example/thumbnail.webp"
                      
                 ></p>
+<div class="note-large notel-default"><div class="notel-title"><p>Info</p>
+</div><div class="notel-content"><p>Here is some notes.</p>
+ </div></div>
+
+<div class="note-large notel-blue"><div class="notel-title"><p>Hint</p>
+</div><div class="notel-content"><p>Here is some notes.</p>
+ </div></div>
+
+<div class="note-large notel-red"><div class="notel-title"><p>Title</p>
+</div><div class="notel-content"><p>Here is some notes.</p>
+ </div></div>
+
+
+
+<div class="note note-default icon-padding"><i class="note-icon fa-solid fa-info-circle"></i><p>1</p>
+</div>
+
+<div class="note note-default icon-padding"><i class="note-icon fa-solid fa-info-circle"></i><p>2</p>
+</div>
+
+<div class="note note-primary icon-padding"><i class="note-icon fa-solid fa-circle-arrow-right"></i><p>3</p>
+</div>
+
+<div class="note note-success icon-padding"><i class="note-icon fa-solid fa-check-circle"></i><p>4</p>
+</div>
+
+<div class="note note-info icon-padding"><i class="note-icon fa-solid fa-info-circle"></i><p>5</p>
+</div>
+
+<div class="note note-warning icon-padding"><i class="note-icon fa-solid fa-exclamation-circle"></i><p>6</p>
+</div>
+
+<div class="note note-danger icon-padding"><i class="note-icon fa-solid fa-times-circle"></i><p>7</p>
+</div>
+
+<div class="note note-red icon-padding"><i class="note-icon fa-solid fa-bolt"></i><p>8</p>
+</div>
+
+
+
 ]]></content>
       <categories>
         <category>Hexo</category>
