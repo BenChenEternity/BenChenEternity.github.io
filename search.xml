@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>This is an example</title>
-    <url>/2023/04/02/example/</url>
-    <content><![CDATA[<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/2023/04/02/example/thumbnail.webp"
-                     
-                ></p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HelloWorld</title>
     <url>/2023/04/02/HelloWorld/</url>
     <content><![CDATA[<h2 id="Welcome-to-my-blog"><a href="#Welcome-to-my-blog" class="headerlink" title="Welcome to my blog"></a>Welcome to my blog</h2><h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><p>This is a wasteland without any knowledge.</p>
@@ -53,6 +36,23 @@
       </categories>
       <tags>
         <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>This is an example</title>
+    <url>/2023/04/02/example/</url>
+    <content><![CDATA[<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/02/example/thumbnail.webp"
+                     
+                ></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
