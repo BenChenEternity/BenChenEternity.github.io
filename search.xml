@@ -3,7 +3,13 @@
   <entry>
     <title>This is an example</title>
     <url>/2023/04/02/example/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/02/example/1.png"
+                     
+                ></p>
+]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
