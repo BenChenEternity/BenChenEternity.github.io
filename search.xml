@@ -120,4 +120,44 @@
         <tag>Hexo</tag>
       </tags>
   </entry>
+  <entry>
+    <title>The Navigation System - Data Structure Project</title>
+    <url>/2023/04/05/DataStrutureProject/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Projects</category>
+      </categories>
+      <tags>
+        <tag>Project</tag>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Journey to Macao</title>
+    <url>/2023/04/04/JourneyToMacao/</url>
+    <content><![CDATA[<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>[Provide a brief overview of your trip, including any major highlights or standout experiences.]</p>
+<h3 id="Day-Day-Number-Date"><a href="#Day-Day-Number-Date" class="headerlink" title="Day [Day Number]: [Date]"></a>Day [Day Number]: [Date]</h3><p>[Describe your experiences and activities for each day of your trip. Use subheadings for each day, and provide details about what you did, where you went, and any notable experiences.]</p>
+<h4 id="Morning"><a href="#Morning" class="headerlink" title="Morning"></a>Morning</h4><p>[Describe what you did in the morning, including any notable experiences or observations.]</p>
+<h4 id="Afternoon"><a href="#Afternoon" class="headerlink" title="Afternoon"></a>Afternoon</h4><p>[Describe what you did in the afternoon, including any notable experiences or observations.]</p>
+<h4 id="Evening"><a href="#Evening" class="headerlink" title="Evening"></a>Evening</h4><p>[Describe what you did in the evening, including any notable experiences or observations.]</p>
+]]></content>
+      <categories>
+        <category>Life</category>
+      </categories>
+      <tags>
+        <tag>Life</tag>
+        <tag>Journey</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>UItest</title>
+    <url>/2023/04/05/UItest/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Life</category>
+      </categories>
+      <tags>
+        <tag>Life</tag>
+      </tags>
+  </entry>
 </search>
