@@ -1,44 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HelloWorld</title>
-    <url>/2023/04/02/HelloWorld/</url>
-    <content><![CDATA[<h2 id="Welcome-to-my-blog"><a href="#Welcome-to-my-blog" class="headerlink" title="Welcome to my blog"></a>Welcome to my blog</h2><h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><p>This is a wasteland without any knowledge.</p>
-<p>I will record some of my project experiences and daily life here.</p>
-<h3 id="Why-should-I-create-a-new-blog"><a href="#Why-should-I-create-a-new-blog" class="headerlink" title="Why should I create a new blog?"></a>Why should I create a new blog?</h3><h4 id="My-deprecated-blog"><a href="#My-deprecated-blog" class="headerlink" title="My deprecated blog"></a>My deprecated blog</h4><p>Actually, I already created a blog when I was a freshman.</p>
-<p>Here is the address:</p>
-<a class="button  regular" href='https://nicolasdavout.github.io' title='My deprecated blog'>My deprecated blog</a>
-
-<p>But I recorded too many redundant things, such as study notes, but I hardly have time to read them. Once I finish writing, I never open them again.</p>
-<p>I don’t think I will ever go back to look at those study notes because it’s too much trouble. It’s better to just search for relevant information online instead.</p>
-<p>I have been used to writing notes by hand for a long time, so I don’t really want to take notes on the computer.</p>
-<p>At the same time, I have more things to do and therefore don’t have any time to write more.</p>
-<p>So, I believe that what should be written is the essence and content that can be helpful for the future.</p>
-<p>My old blog had poor optimization, taking a long time to load each time. This time, with my new website, I will learn from the lesson and try my best to compress image size to improve loading speed.</p>
-<p>Not only that, but my abandoned blog has a mixture of markdown, latex, and html languages together. The images are directly placed in the text using base64 encoding method, which makes it very complicated and the efficiency is extremely low. In my new blog, I will be using Markdown language almost exclusively to write content.</p>
-<h4 id="My-old-domain-name-is-about-to-expire"><a href="#My-old-domain-name-is-about-to-expire" class="headerlink" title="My old domain name is about to expire"></a>My old domain name is about to expire</h4><p>The domain name I purchased on Tencent Cloud <a class="button  regular" href='ajie.fun' title='ajie.fun'>ajie.fun</a> is about to expire. I enjoyed a discount for the first year, but I am not planning to renew it.</p>
-<p>I have purchased a new domain name for this current blog. As for why the domain is .wiki, well, it’s because it was cheap.</p>
-<h4 id="Create-opportunities-for-the-future"><a href="#Create-opportunities-for-the-future" class="headerlink" title="Create opportunities for the future"></a>Create opportunities for the future</h4><p>When submitting my resume to other universities or companies, I can confidently present some of my achievements instead of submitting a blank piece of paper.</p>
-<p>Of course, I also hope that I can improve my English skills by writing blogs and coding because since university, I have hardly spent any time improving my English proficiency.</p>
-<p>For example, I feel like this article that I am writing now is quite colloquial.</p>
-<h4 id="Record-some-development-experience"><a href="#Record-some-development-experience" class="headerlink" title="Record some development experience"></a>Record some development experience</h4><p>Record some experiences during development, as well as the problems encountered.</p>
-<h4 id="Record-my-life"><a href="#Record-my-life" class="headerlink" title="Record my life"></a>Record my life</h4><p>College life is really a mess. It feels like I’m rushing to meet deadlines every day, without much time to take care of my personal life. I wish I could document my life so that when I look back on it years later, I might realize that college was just like that, and it passed by in the blink of an eye. It’s just like how now I always feel a bit nostalgic about my middle school and high school days.</p>
-<p>I need to constantly encourage myself to do more meaningful things rather than just getting by each day.</p>
-<p>I should record my instant ideas in a timely manner, whether they are related to learning or reflections on life.</p>
-<h3 id="In-this-new-blog"><a href="#In-this-new-blog" class="headerlink" title="In this new blog"></a>In this new blog</h3><p>I will mostly use English to write about my experiences, thoughts and things encountered in life. </p>
-<p>I know that this may cause many people to immediately close the website or rely on translation tools. However, I just want to showcase myself within my own field to myself and a small group of people.</p>
-<p>At the same time, I will also record some development ideas, thought processes, as well as the setbacks encountered and their solutions. </p>
-<p>I will no longer write about basic learning content and instead directly write down my ideas.</p>
-<h3 id="In-the-end"><a href="#In-the-end" class="headerlink" title="In the end"></a>In the end</h3><p>Hello world! And, good night.</p>
-]]></content>
-      <categories>
-        <category>Guidance</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Remove Baidu Netdisk download speed limit</title>
     <url>/2023/04/03/BaiduNetdiskLimit/</url>
     <content><![CDATA[<h2 id="F-k-the-netdisk"><a href="#F-k-the-netdisk" class="headerlink" title="F**k the netdisk"></a>F**k the netdisk</h2><p>Baidu Netdisk’s download speed limit is really annoying.</p>
@@ -104,34 +66,6 @@
       </tags>
   </entry>
   <entry>
-    <title>The Hexo Blog Manager</title>
-    <url>/2023/04/09/TheHexoBlogManager/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Projects</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Journey to Macao</title>
-    <url>/2023/04/04/JourneyToMacao/</url>
-    <content><![CDATA[<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>[Provide a brief overview of your trip, including any major highlights or standout experiences.]</p>
-<h3 id="Day-Day-Number-Date"><a href="#Day-Day-Number-Date" class="headerlink" title="Day [Day Number]: [Date]"></a>Day [Day Number]: [Date]</h3><p>[Describe your experiences and activities for each day of your trip. Use subheadings for each day, and provide details about what you did, where you went, and any notable experiences.]</p>
-<h4 id="Morning"><a href="#Morning" class="headerlink" title="Morning"></a>Morning</h4><p>[Describe what you did in the morning, including any notable experiences or observations.]</p>
-<h4 id="Afternoon"><a href="#Afternoon" class="headerlink" title="Afternoon"></a>Afternoon</h4><p>[Describe what you did in the afternoon, including any notable experiences or observations.]</p>
-<h4 id="Evening"><a href="#Evening" class="headerlink" title="Evening"></a>Evening</h4><p>[Describe what you did in the evening, including any notable experiences or observations.]</p>
-]]></content>
-      <categories>
-        <category>Life</category>
-      </categories>
-      <tags>
-        <tag>Life</tag>
-        <tag>Journey</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>The Navigation System - Data Structure Project</title>
     <url>/2023/04/05/DataStrutureProject/</url>
     <content><![CDATA[]]></content>
@@ -139,8 +73,46 @@
         <category>Projects</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>Project</tag>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HelloWorld</title>
+    <url>/2023/04/02/HelloWorld/</url>
+    <content><![CDATA[<h2 id="Welcome-to-my-blog"><a href="#Welcome-to-my-blog" class="headerlink" title="Welcome to my blog"></a>Welcome to my blog</h2><h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><p>This is a wasteland without any knowledge.</p>
+<p>I will record some of my project experiences and daily life here.</p>
+<h3 id="Why-should-I-create-a-new-blog"><a href="#Why-should-I-create-a-new-blog" class="headerlink" title="Why should I create a new blog?"></a>Why should I create a new blog?</h3><h4 id="My-deprecated-blog"><a href="#My-deprecated-blog" class="headerlink" title="My deprecated blog"></a>My deprecated blog</h4><p>Actually, I already created a blog when I was a freshman.</p>
+<p>Here is the address:</p>
+<a class="button  regular" href='https://nicolasdavout.github.io' title='My deprecated blog'>My deprecated blog</a>
+
+<p>But I recorded too many redundant things, such as study notes, but I hardly have time to read them. Once I finish writing, I never open them again.</p>
+<p>I don’t think I will ever go back to look at those study notes because it’s too much trouble. It’s better to just search for relevant information online instead.</p>
+<p>I have been used to writing notes by hand for a long time, so I don’t really want to take notes on the computer.</p>
+<p>At the same time, I have more things to do and therefore don’t have any time to write more.</p>
+<p>So, I believe that what should be written is the essence and content that can be helpful for the future.</p>
+<p>My old blog had poor optimization, taking a long time to load each time. This time, with my new website, I will learn from the lesson and try my best to compress image size to improve loading speed.</p>
+<p>Not only that, but my abandoned blog has a mixture of markdown, latex, and html languages together. The images are directly placed in the text using base64 encoding method, which makes it very complicated and the efficiency is extremely low. In my new blog, I will be using Markdown language almost exclusively to write content.</p>
+<h4 id="My-old-domain-name-is-about-to-expire"><a href="#My-old-domain-name-is-about-to-expire" class="headerlink" title="My old domain name is about to expire"></a>My old domain name is about to expire</h4><p>The domain name I purchased on Tencent Cloud <a class="button  regular" href='ajie.fun' title='ajie.fun'>ajie.fun</a> is about to expire. I enjoyed a discount for the first year, but I am not planning to renew it.</p>
+<p>I have purchased a new domain name for this current blog. As for why the domain is .wiki, well, it’s because it was cheap.</p>
+<h4 id="Create-opportunities-for-the-future"><a href="#Create-opportunities-for-the-future" class="headerlink" title="Create opportunities for the future"></a>Create opportunities for the future</h4><p>When submitting my resume to other universities or companies, I can confidently present some of my achievements instead of submitting a blank piece of paper.</p>
+<p>Of course, I also hope that I can improve my English skills by writing blogs and coding because since university, I have hardly spent any time improving my English proficiency.</p>
+<p>For example, I feel like this article that I am writing now is quite colloquial.</p>
+<h4 id="Record-some-development-experience"><a href="#Record-some-development-experience" class="headerlink" title="Record some development experience"></a>Record some development experience</h4><p>Record some experiences during development, as well as the problems encountered.</p>
+<h4 id="Record-my-life"><a href="#Record-my-life" class="headerlink" title="Record my life"></a>Record my life</h4><p>College life is really a mess. It feels like I’m rushing to meet deadlines every day, without much time to take care of my personal life. I wish I could document my life so that when I look back on it years later, I might realize that college was just like that, and it passed by in the blink of an eye. It’s just like how now I always feel a bit nostalgic about my middle school and high school days.</p>
+<p>I need to constantly encourage myself to do more meaningful things rather than just getting by each day.</p>
+<p>I should record my instant ideas in a timely manner, whether they are related to learning or reflections on life.</p>
+<h3 id="In-this-new-blog"><a href="#In-this-new-blog" class="headerlink" title="In this new blog"></a>In this new blog</h3><p>I will mostly use English to write about my experiences, thoughts and things encountered in life. </p>
+<p>I know that this may cause many people to immediately close the website or rely on translation tools. However, I just want to showcase myself within my own field to myself and a small group of people.</p>
+<p>At the same time, I will also record some development ideas, thought processes, as well as the setbacks encountered and their solutions. </p>
+<p>I will no longer write about basic learning content and instead directly write down my ideas.</p>
+<h3 id="In-the-end"><a href="#In-the-end" class="headerlink" title="In the end"></a>In the end</h3><p>Hello world! And, good night.</p>
+]]></content>
+      <categories>
+        <category>Guidance</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
       </tags>
   </entry>
   <entry>
@@ -187,7 +159,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/HexoBlogManagerDOCS-zh-CN/1.webp"
+                     data-src="/2023/04/09/HexoBlogManagerDOCS-zh-CN/1.webp"
                       alt="PIC1"
                 ></p>
 <p>从上到下，从左到右依次是：</p>
@@ -208,7 +180,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/HexoBlogManagerDOCS-zh-CN/8.webp"
+                     data-src="/2023/04/09/HexoBlogManagerDOCS-zh-CN/8.webp"
                       alt="PIC8"
                 ></p>
 <p>第一个输入框填写您的hexo博客的根目录</p>
@@ -233,7 +205,7 @@
 <p><img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/H3.webp"
+                     data-src="/2023/04/09/HexoBlogManagerDOCS-zh-CN/3.webp"
                       alt="PIC3"
                 ></p>
 <ul>
@@ -329,6 +301,34 @@
         <tag>Java</tag>
         <tag>Personal works</tag>
         <tag>DOCS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Journey to Macao</title>
+    <url>/2023/04/04/JourneyToMacao/</url>
+    <content><![CDATA[<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>[Provide a brief overview of your trip, including any major highlights or standout experiences.]</p>
+<h3 id="Day-Day-Number-Date"><a href="#Day-Day-Number-Date" class="headerlink" title="Day [Day Number]: [Date]"></a>Day [Day Number]: [Date]</h3><p>[Describe your experiences and activities for each day of your trip. Use subheadings for each day, and provide details about what you did, where you went, and any notable experiences.]</p>
+<h4 id="Morning"><a href="#Morning" class="headerlink" title="Morning"></a>Morning</h4><p>[Describe what you did in the morning, including any notable experiences or observations.]</p>
+<h4 id="Afternoon"><a href="#Afternoon" class="headerlink" title="Afternoon"></a>Afternoon</h4><p>[Describe what you did in the afternoon, including any notable experiences or observations.]</p>
+<h4 id="Evening"><a href="#Evening" class="headerlink" title="Evening"></a>Evening</h4><p>[Describe what you did in the evening, including any notable experiences or observations.]</p>
+]]></content>
+      <categories>
+        <category>Life</category>
+      </categories>
+      <tags>
+        <tag>Life</tag>
+        <tag>Journey</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>The Hexo Blog Manager</title>
+    <url>/2023/04/09/TheHexoBlogManager/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Projects</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
 </search>
