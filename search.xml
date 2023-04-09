@@ -78,44 +78,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HelloWorld</title>
-    <url>/2023/04/02/HelloWorld/</url>
-    <content><![CDATA[<h2 id="Welcome-to-my-blog"><a href="#Welcome-to-my-blog" class="headerlink" title="Welcome to my blog"></a>Welcome to my blog</h2><h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><p>This is a wasteland without any knowledge.</p>
-<p>I will record some of my project experiences and daily life here.</p>
-<h3 id="Why-should-I-create-a-new-blog"><a href="#Why-should-I-create-a-new-blog" class="headerlink" title="Why should I create a new blog?"></a>Why should I create a new blog?</h3><h4 id="My-deprecated-blog"><a href="#My-deprecated-blog" class="headerlink" title="My deprecated blog"></a>My deprecated blog</h4><p>Actually, I already created a blog when I was a freshman.</p>
-<p>Here is the address:</p>
-<a class="button  regular" href='https://nicolasdavout.github.io' title='My deprecated blog'>My deprecated blog</a>
-
-<p>But I recorded too many redundant things, such as study notes, but I hardly have time to read them. Once I finish writing, I never open them again.</p>
-<p>I don’t think I will ever go back to look at those study notes because it’s too much trouble. It’s better to just search for relevant information online instead.</p>
-<p>I have been used to writing notes by hand for a long time, so I don’t really want to take notes on the computer.</p>
-<p>At the same time, I have more things to do and therefore don’t have any time to write more.</p>
-<p>So, I believe that what should be written is the essence and content that can be helpful for the future.</p>
-<p>My old blog had poor optimization, taking a long time to load each time. This time, with my new website, I will learn from the lesson and try my best to compress image size to improve loading speed.</p>
-<p>Not only that, but my abandoned blog has a mixture of markdown, latex, and html languages together. The images are directly placed in the text using base64 encoding method, which makes it very complicated and the efficiency is extremely low. In my new blog, I will be using Markdown language almost exclusively to write content.</p>
-<h4 id="My-old-domain-name-is-about-to-expire"><a href="#My-old-domain-name-is-about-to-expire" class="headerlink" title="My old domain name is about to expire"></a>My old domain name is about to expire</h4><p>The domain name I purchased on Tencent Cloud <a class="button  regular" href='ajie.fun' title='ajie.fun'>ajie.fun</a> is about to expire. I enjoyed a discount for the first year, but I am not planning to renew it.</p>
-<p>I have purchased a new domain name for this current blog. As for why the domain is .wiki, well, it’s because it was cheap.</p>
-<h4 id="Create-opportunities-for-the-future"><a href="#Create-opportunities-for-the-future" class="headerlink" title="Create opportunities for the future"></a>Create opportunities for the future</h4><p>When submitting my resume to other universities or companies, I can confidently present some of my achievements instead of submitting a blank piece of paper.</p>
-<p>Of course, I also hope that I can improve my English skills by writing blogs and coding because since university, I have hardly spent any time improving my English proficiency.</p>
-<p>For example, I feel like this article that I am writing now is quite colloquial.</p>
-<h4 id="Record-some-development-experience"><a href="#Record-some-development-experience" class="headerlink" title="Record some development experience"></a>Record some development experience</h4><p>Record some experiences during development, as well as the problems encountered.</p>
-<h4 id="Record-my-life"><a href="#Record-my-life" class="headerlink" title="Record my life"></a>Record my life</h4><p>College life is really a mess. It feels like I’m rushing to meet deadlines every day, without much time to take care of my personal life. I wish I could document my life so that when I look back on it years later, I might realize that college was just like that, and it passed by in the blink of an eye. It’s just like how now I always feel a bit nostalgic about my middle school and high school days.</p>
-<p>I need to constantly encourage myself to do more meaningful things rather than just getting by each day.</p>
-<p>I should record my instant ideas in a timely manner, whether they are related to learning or reflections on life.</p>
-<h3 id="In-this-new-blog"><a href="#In-this-new-blog" class="headerlink" title="In this new blog"></a>In this new blog</h3><p>I will mostly use English to write about my experiences, thoughts and things encountered in life. </p>
-<p>I know that this may cause many people to immediately close the website or rely on translation tools. However, I just want to showcase myself within my own field to myself and a small group of people.</p>
-<p>At the same time, I will also record some development ideas, thought processes, as well as the setbacks encountered and their solutions. </p>
-<p>I will no longer write about basic learning content and instead directly write down my ideas.</p>
-<h3 id="In-the-end"><a href="#In-the-end" class="headerlink" title="In the end"></a>In the end</h3><p>Hello world! And, good night.</p>
-]]></content>
-      <categories>
-        <category>Guidance</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hexo Blog Manager</title>
     <url>/2023/04/09/HexoBlogManagerDOCS-zh-CN/</url>
     <content><![CDATA[<p>本文档帮助你更快上手 Hexo Blog Manager</p>
@@ -321,14 +283,285 @@
       </tags>
   </entry>
   <entry>
-    <title>The Hexo Blog Manager</title>
-    <url>/2023/04/09/TheHexoBlogManager/</url>
-    <content><![CDATA[]]></content>
+    <title>HelloWorld</title>
+    <url>/2023/04/02/HelloWorld/</url>
+    <content><![CDATA[<h2 id="Welcome-to-my-blog"><a href="#Welcome-to-my-blog" class="headerlink" title="Welcome to my blog"></a>Welcome to my blog</h2><h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><p>This is a wasteland without any knowledge.</p>
+<p>I will record some of my project experiences and daily life here.</p>
+<h3 id="Why-should-I-create-a-new-blog"><a href="#Why-should-I-create-a-new-blog" class="headerlink" title="Why should I create a new blog?"></a>Why should I create a new blog?</h3><h4 id="My-deprecated-blog"><a href="#My-deprecated-blog" class="headerlink" title="My deprecated blog"></a>My deprecated blog</h4><p>Actually, I already created a blog when I was a freshman.</p>
+<p>Here is the address:</p>
+<a class="button  regular" href='https://nicolasdavout.github.io' title='My deprecated blog'>My deprecated blog</a>
+
+<p>But I recorded too many redundant things, such as study notes, but I hardly have time to read them. Once I finish writing, I never open them again.</p>
+<p>I don’t think I will ever go back to look at those study notes because it’s too much trouble. It’s better to just search for relevant information online instead.</p>
+<p>I have been used to writing notes by hand for a long time, so I don’t really want to take notes on the computer.</p>
+<p>At the same time, I have more things to do and therefore don’t have any time to write more.</p>
+<p>So, I believe that what should be written is the essence and content that can be helpful for the future.</p>
+<p>My old blog had poor optimization, taking a long time to load each time. This time, with my new website, I will learn from the lesson and try my best to compress image size to improve loading speed.</p>
+<p>Not only that, but my abandoned blog has a mixture of markdown, latex, and html languages together. The images are directly placed in the text using base64 encoding method, which makes it very complicated and the efficiency is extremely low. In my new blog, I will be using Markdown language almost exclusively to write content.</p>
+<h4 id="My-old-domain-name-is-about-to-expire"><a href="#My-old-domain-name-is-about-to-expire" class="headerlink" title="My old domain name is about to expire"></a>My old domain name is about to expire</h4><p>The domain name I purchased on Tencent Cloud <a class="button  regular" href='ajie.fun' title='ajie.fun'>ajie.fun</a> is about to expire. I enjoyed a discount for the first year, but I am not planning to renew it.</p>
+<p>I have purchased a new domain name for this current blog. As for why the domain is .wiki, well, it’s because it was cheap.</p>
+<h4 id="Create-opportunities-for-the-future"><a href="#Create-opportunities-for-the-future" class="headerlink" title="Create opportunities for the future"></a>Create opportunities for the future</h4><p>When submitting my resume to other universities or companies, I can confidently present some of my achievements instead of submitting a blank piece of paper.</p>
+<p>Of course, I also hope that I can improve my English skills by writing blogs and coding because since university, I have hardly spent any time improving my English proficiency.</p>
+<p>For example, I feel like this article that I am writing now is quite colloquial.</p>
+<h4 id="Record-some-development-experience"><a href="#Record-some-development-experience" class="headerlink" title="Record some development experience"></a>Record some development experience</h4><p>Record some experiences during development, as well as the problems encountered.</p>
+<h4 id="Record-my-life"><a href="#Record-my-life" class="headerlink" title="Record my life"></a>Record my life</h4><p>College life is really a mess. It feels like I’m rushing to meet deadlines every day, without much time to take care of my personal life. I wish I could document my life so that when I look back on it years later, I might realize that college was just like that, and it passed by in the blink of an eye. It’s just like how now I always feel a bit nostalgic about my middle school and high school days.</p>
+<p>I need to constantly encourage myself to do more meaningful things rather than just getting by each day.</p>
+<p>I should record my instant ideas in a timely manner, whether they are related to learning or reflections on life.</p>
+<h3 id="In-this-new-blog"><a href="#In-this-new-blog" class="headerlink" title="In this new blog"></a>In this new blog</h3><p>I will mostly use English to write about my experiences, thoughts and things encountered in life. </p>
+<p>I know that this may cause many people to immediately close the website or rely on translation tools. However, I just want to showcase myself within my own field to myself and a small group of people.</p>
+<p>At the same time, I will also record some development ideas, thought processes, as well as the setbacks encountered and their solutions. </p>
+<p>I will no longer write about basic learning content and instead directly write down my ideas.</p>
+<h3 id="In-the-end"><a href="#In-the-end" class="headerlink" title="In the end"></a>In the end</h3><p>Hello world! And, good night.</p>
+]]></content>
+      <categories>
+        <category>Guidance</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo Blog Manager</title>
+    <url>/2023/04/09/TheHexoBlogManagerDOCS-en-US/</url>
+    <content><![CDATA[<p>This document helps you get started with the Hexo Blog Manager more quickly.</p>
+<h2 id="Features-Implemented"><a href="#Features-Implemented" class="headerlink" title="Features Implemented"></a>Features Implemented</h2><ul>
+<li><p>Markdown file management</p>
+<ul>
+<li>Display the name and priority of markdown files.</li>
+<li>Freely view and modify the detailed header information of markdown files.</li>
+<li>Quickly create new markdown files (and their corresponding folders).</li>
+<li>Delete markdown files (and their corresponding folders).</li>
+</ul>
+</li>
+<li><p>Blog generation and deployment</p>
+</li>
+<li><p>Automatic backup</p>
+</li>
+</ul>
+<blockquote>
+<p>More features to be developed.</p>
+</blockquote>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><h3 id="Running-Hexo-Blog-Manager"><a href="#Running-Hexo-Blog-Manager" class="headerlink" title="Running Hexo Blog Manager"></a>Running Hexo Blog Manager</h3><ul>
+<li>For HexoBlogManager.jar</li>
+</ul>
+<blockquote>
+<p>To run a .jar file, you need to first install the Java Runtime Environment (JRE). If you do not have JRE installed, download and install it from the Oracle official website. Then, follow these steps to run the Hexo Blog Manager.jar file:</p>
+</blockquote>
+<p><strong>You can directly double-click the jar file to open it.</strong></p>
+<p>Or</p>
+<ol>
+<li>Open the directory containing the HexoBlogManager.jar file in the terminal.</li>
+<li>Enter the following command in the command line or terminal window: <code>java -jar HexoBlogManager.jar</code></li>
+<li>Press Enter to start the application.</li>
+</ol>
+<ul>
+<li>For Hexo Blog Manager.exe</li>
+</ul>
+<p><strong>To run the .exe file, simply double-click the file to start the application.</strong></p>
+<h3 id="Requirements"><a href="#Requirements" class="headerlink" title="Requirements"></a>Requirements</h3><p>As it is aimed at most users, the operating system is Windows and does not support Linux and MAC.</p>
+<p>Before using it, you should ensure that your hexo can successfully execute <code>hexo clean</code> <code>hexo g</code> <code>hexo d</code>. Otherwise, unexpected errors may occur due to some reasons.</p>
+<h3 id="User-Interface-Introduction"><a href="#User-Interface-Introduction" class="headerlink" title="User Interface Introduction"></a>User Interface Introduction</h3><p>This application has the following six buttons:</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/1.webp"
+                      alt="PIC1"
+                ></p>
+<p>From top to bottom, from left to right, they are:</p>
+<ul>
+<li>Markdown file management: Manage Markdown files. You can create, edit, rename, and delete Markdown files.</li>
+<li>Blog generation and deployment: Clear,</li>
+<li>Settings: You can change the blog path through this button.</li>
+<li>Open the blog post directory: You can quickly find all articles through this button.</li>
+<li>About the author: View the author information of the application.</li>
+<li>Help documentation: View the help documentation of the application.</li>
+</ul>
+<p>The following will introduce each part in detail.</p>
+<h3 id="Settings"><a href="#Settings" class="headerlink" title="Settings"></a>Settings</h3><p>There are two settings in total:</p>
+<ul>
+<li>Blog root directory</li>
+<li>cwebp directory</li>
+</ul>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/8.webp"
+                      alt="PIC8"
+                ></p>
+<p>Fill in the root directory of your hexo blog in the first input box.</p>
+<p>Fill in the root directory of your cwebp in the second input box.</p>
+<h4 id="What-is-cwebp"><a href="#What-is-cwebp" class="headerlink" title="What is cwebp?"></a>What is cwebp?</h4><p>cwebp is a tool that can compress image files into WebP files.</p>
+<p><a class="link"   href="https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.0-windows-x64.zip" >Click here to download WebP for windows <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>This is an introduction document (no need to understand, can be skipped)</p>
+<p><a class="link"   href="https://developers.google.com/speed/webp/docs/cwebp" >https://developers.google.com/speed/webp/docs/cwebp <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="Why-do-you-need-cwebp"><a href="#Why-do-you-need-cwebp" class="headerlink" title="Why do you need cwebp?"></a>Why do you need cwebp?</h4><p>Compressing image files into WebP files can greatly compress images, save costs such as traffic, and improve user access speed, which can improve the user experience.</p>
+<h3 id="Markdown-file-management"><a href="#Markdown-file-management" class="headerlink" title="Markdown file management"></a>Markdown file management</h3><p>To manage Markdown files, click the “Markdown file management” button. In this page:</p>
+<h4 id="Article-Management-Panel"><a href="#Article-Management-Panel" class="headerlink" title="Article Management Panel"></a>Article Management Panel</h4><p>Displays the name of the article files and their priority (sticky). The displayed priority is almost the same as the actual deployment. The format displayed is <code>article (priority)</code>. If some articles in themes that support <code>top: true</code> have a top project, then the top will be sorted first. The remaining articles that do not include <code>top: true</code> will be arranged in descending order according to the priority <code>sticky: num</code>, i.e., sorted from the highest to the lowest based on the sticky value. If some articles do not have <code>sticky: num</code>, they will be sorted last.</p>
+<blockquote>
+<p>In the example below, example.md has the <code>top: true</code> attribute, so it has the highest priority. HelloWorld.md has a <code>sticky: 999</code> attribute, with a value much higher than the rest of the sticky values, which are (6, 5, 4, 3, 2, 1, null), so it has a higher priority than the .md files with smaller or no sticky values. example2.md does not have the <code>sticky: num</code> attribute, so it has the lowest priority.</p>
+</blockquote>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/2.webp"
+                      alt="PIC2"
+                ></p>
+<h4 id="Article-Creation-Panel"><a href="#Article-Creation-Panel" class="headerlink" title="Article Creation Panel"></a>Article Creation Panel</h4><p>Click the “New Article” button to call up the creation panel.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/3.webp"
+                      alt="PIC3"
+                ></p>
+<ul>
+<li><code>Title</code>: The title of the article, which is a required field.</li>
+<li><code>Category</code>: Select the type of article. Here, an article can only select one type. In the future, it may be changed to allow multiple types to be selected (but this seems to have no difference from tags).</li>
+<li><code>Tags</code>: Select the tags of the article. Hold down the Ctrl key and click the left mouse button to select multiple items.</li>
+</ul>
+<blockquote>
+<p>Note: Some themes have a maximum number of supported tags. If this number is exceeded, different themes will handle it differently.</p>
+</blockquote>
+<ul>
+<li><code>Priority</code>: That is sticky, which defines the priority of the article. If you check the Enable on the right, it will be enabled. Otherwise, this tag will not be used.</li>
+<li><code>Abstract</code>: That is excerpt, which defines the abstract of the article. If you check the Enable on the right, it will be enabled. Otherwise, this tag will not be used.</li>
+<li><code>Thumbnail</code>: Select the thumbnail of the article. If you check the Enable on the right, it will be enabled. Otherwise, this tag will not be used.</li>
+<li><code>Cover</code>: Select the cover of the article. If you check the Enable on the right, it will be enabled. Otherwise, this tag will not be used.</li>
+</ul>
+<blockquote>
+<p>It is worth noting that the absolute path writing method is used here. For example,</p>
+</blockquote>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/4.webp"
+                      alt="PIC4"
+                ></p>
+<blockquote>
+<p>If you have installed some plugins that change the path after generating the static website, such as abbrlink, etc., this function will not be available, please manually configure it in the subsequent attribute modification panel.</p>
+</blockquote>
+<p>Click the submit button to create your article.</p>
+<p>After creating it, a prompt box will pop up, and you can click the button inside to quickly access the file you created.</p>
+<p><strong>Manage Your Tags</strong></p>
+<p>Click the <code>Categories &amp; tags management</code> button in the new panel to manage your categories and tags. Enter the information in the input box at the top and click <code>+</code> to add it, and select a project and click <code>-</code> to delete it.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/6.webp"
+                      alt="PIC6"
+                ></p>
+<h4 id="Article-Deletion"><a href="#Article-Deletion" class="headerlink" title="Article Deletion"></a>Article Deletion</h4><p>Select an article and then click the “Delete Article” button to delete the article and its corresponding folder. If multiple articles are selected, only the first one will be deleted. To ensure safety, a prompt box will pop up after selecting the article, asking if you want to confirm the deletion.</p>
+<h4 id="Article-Management-Panel-1"><a href="#Article-Management-Panel-1" class="headerlink" title="Article Management Panel"></a>Article Management Panel</h4><p>Displays the name of the article files and their priority (sticky). The displayed priority is almost the same as the actual deployment. The format displayed is <code>article (priority)</code>. If some articles in themes that support <code>top: true</code> have a top project, then the top will be sorted first. The remaining articles that do not include <code>top: true</code> will be arranged in descending order according to the priority <code>sticky: num</code>, i.e., sorted from the highest to the lowest based on the sticky value. If some articles do not have <code>sticky: num</code>, they will be sorted last.</p>
+<blockquote>
+<p>In the example below, example.md has the <code>top: true</code> attribute, so it has the highest priority. HelloWorld.md has a <code>sticky: 999</code> attribute, with a value much higher than the rest of the sticky values, which are (6, 5, 4, 3, 2, 1, null), so it has a higher priority than the .md files with smaller or no sticky values. example2.md does not have the <code>sticky: num</code> attribute, so it has the lowest priority.</p>
+</blockquote>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/2.webp"
+                      alt="PIC2"
+                ></p>
+<h4 id="Article-Creation-Panel-1"><a href="#Article-Creation-Panel-1" class="headerlink" title="Article Creation Panel"></a>Article Creation Panel</h4><p>Click the “New Article” button to call up the creation panel.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/3.webp"
+                      alt="PIC3"
+                ></p>
+<ul>
+<li><code>Title</code>: The title of the article, which is a required field.</li>
+<li><code>Category</code>: Select the type of article. Here, an article can only select one type. In the future, it may be changed to allow multiple types to be selected (but this seems to have no difference from tags).</li>
+<li><code>Tags</code>: Select the tags of the article. Hold down the Ctrl key and click the left mouse button to select multiple items.</li>
+</ul>
+<blockquote>
+<p>Note: Some themes have a maximum number of supported tags. If this number is exceeded, different themes will handle it differently.</p>
+</blockquote>
+<ul>
+<li><code>Priority</code>: That is sticky, which defines the priority of the article. If you check the Enable on the right, it will be enabled. Otherwise, this tag will not be used.</li>
+<li><code>Abstract</code>: That is excerpt, which defines the abstract of the article. If you check the Enable on the right, it will be enabled. Otherwise, this tag will not be used.</li>
+<li><code>Thumbnail</code>: Select the thumbnail of the article. If you check the Enable on the right, it will be enabled. Otherwise, this tag will not be used.</li>
+<li><code>Cover</code>: Select the cover of the article. If you check the Enable on the right, it will be enabled. Otherwise, this tag will not be used.</li>
+</ul>
+<blockquote>
+<p>It is worth noting that the absolute path writing method is used here. For example,</p>
+</blockquote>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/4.webp"
+                      alt="PIC4"
+                ></p>
+<blockquote>
+<p>If you have installed some plugins that change the path after generating the static website, such as abbrlink, etc., this function will not be available, please manually configure it in the subsequent attribute modification panel.</p>
+</blockquote>
+<p>Click the submit button to create your article.</p>
+<p>After creating it, a prompt box will pop up, and you can click the button inside to quickly access the file you created.</p>
+<p><strong>Manage Your Tags</strong></p>
+<p>Click the <code>Categories &amp; tags management</code> button in the new panel to manage your categories and tags. Enter the information in the input box at the top and click <code>+</code> to add it, and select a project and click <code>-</code> to delete it.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/6.webp"
+                      alt="PIC6"
+                ></p>
+<h4 id="Article-Deletion-1"><a href="#Article-Deletion-1" class="headerlink" title="Article Deletion"></a>Article Deletion</h4><p>Select an article and then click the “Delete Article” button to delete the article and its corresponding folder. If multiple articles are selected, only the first one will be deleted. To ensure safety, a prompt box will pop up after selecting the article, asking if you want to confirm the deletion.</p>
+<blockquote>
+<p>Don’t worry if you accidentally delete a file. Every time you open Hexo Blog Manager, all files in the <code>_posts</code> folder will be automatically backed up to a <code>backup</code> folder in the same directory.</p>
+</blockquote>
+<h4 id="Refresh-Button"><a href="#Refresh-Button" class="headerlink" title="Refresh Button"></a>Refresh Button</h4><p>If you manually modify a file’s attribute values using an editor, you can simply click the refresh button to reload the content.</p>
+<h4 id="Attribute-Viewing-and-Editing-Panel"><a href="#Attribute-Viewing-and-Editing-Panel" class="headerlink" title="Attribute Viewing and Editing Panel"></a>Attribute Viewing and Editing Panel</h4><p>Select an article and click the <code>Details</code> button to access the attribute values of the file.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/5.webp"
+                      alt="PIC5"
+                ></p>
+<p>You can freely add a <code>Add new</code> and delete key-value pairs with the <code>.md</code> file header. However, the key must be one of the following:</p>
+<ul>
+<li>title</li>
+<li>date</li>
+<li>updated</li>
+<li>categories</li>
+<li>tags</li>
+<li>sticky</li>
+<li>keywords</li>
+<li>description</li>
+<li>thumbnail</li>
+<li>cover</li>
+<li>top</li>
+<li>comments</li>
+<li>excerpt</li>
+<li>toc</li>
+<li>mathjax</li>
+</ul>
+<p>Otherwise, the key-value pair will not be added successfully.</p>
+<p>The attribute viewing and editing panel also arranges the key-value pairs in this order.</p>
+<p>After you have finished editing, click <code>Submit Changes</code> to apply these modifications to the file.</p>
+<h3 id="Blog-Generation-and-Deployment"><a href="#Blog-Generation-and-Deployment" class="headerlink" title="Blog Generation and Deployment"></a>Blog Generation and Deployment</h3><p>To generate and deploy the blog, click the <code>Blog Generation and Deployment</code> button. On this page, you can perform the following actions:</p>
+<ul>
+<li>Clear content, i.e. <code>hexo clean</code></li>
+<li>Generate and open a local server at <a class="link"   href="http://localhost:4000/" >http://localhost:4000/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>, i.e. <code>hexo g &amp;&amp; hexo s</code></li>
+<li>Generate and deploy to GitHub, i.e. <code>hexo g &amp;&amp; hexo d</code></li>
+</ul>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/7.webp"
+                      alt="PIC7"
+                ></p>
+<blockquote>
+<p>After you open the server locally, it is best not to force the process to end through the task manager, as this may cause the background process that occupies port 4000 to not release. After clicking <code>Generate and open on localhost</code>, Hexo Blog Manager will forcibly end the current process that occupies port 4000 (if any).</p>
+</blockquote>
+<h3 id="Open-Blog-File-Directory"><a href="#Open-Blog-File-Directory" class="headerlink" title="Open Blog File Directory"></a>Open Blog File Directory</h3><p>Click the “Folder” icon button to quickly access the <code>.md</code> files of your blog.</p>
+<h3 id="About-the-Author"><a href="#About-the-Author" class="headerlink" title="About the Author"></a>About the Author</h3><p>To view information about the author of the application, click the “About the Author” button, where you can report bugs to my email or visit my GitHub page.</p>
+<h3 id="Help-Document"><a href="#Help-Document" class="headerlink" title="Help Document"></a>Help Document</h3><p>To view the help document for the application, click the button with the “Help Document” icon.</p>
+]]></content>
       <categories>
         <category>Projects</category>
       </categories>
       <tags>
         <tag>Java</tag>
+        <tag>Personal works</tag>
+        <tag>DOCS</tag>
       </tags>
   </entry>
 </search>
