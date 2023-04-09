@@ -326,8 +326,8 @@
   <entry>
     <title>Hexo Blog Manager</title>
     <url>/2023/04/09/TheHexoBlogManagerDOCS-zh-CN/</url>
-    <content><![CDATA[<p>本文档帮助你更快上手 Hexo Blog Manager</p>
-<p><a class="link"   href="https://ajie.wiki/2023/04/09/TheHexoBlogManagerDOCS-en-US/" >英语 English <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+    <content><![CDATA[<p><a class="link"   href="https://ajie.wiki/2023/04/09/TheHexoBlogManagerDOCS-en-US/" >英语 English <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>本文档帮助你更快上手 Hexo Blog Manager</p>
 <h2 id="实现的功能"><a href="#实现的功能" class="headerlink" title="实现的功能"></a>实现的功能</h2><ul>
 <li><p>markdown文件管理</p>
 <ul>
