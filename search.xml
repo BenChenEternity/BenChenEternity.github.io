@@ -1,3 +1,334 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
+  <entry>
+    <title>HelloWorld</title>
+    <url>/2023/04/02/HelloWorld/</url>
+    <content><![CDATA[<h2 id="Welcome-to-my-blog"><a href="#Welcome-to-my-blog" class="headerlink" title="Welcome to my blog"></a>Welcome to my blog</h2><h3 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h3><p>This is a wasteland without any knowledge.</p>
+<p>I will record some of my project experiences and daily life here.</p>
+<h3 id="Why-should-I-create-a-new-blog"><a href="#Why-should-I-create-a-new-blog" class="headerlink" title="Why should I create a new blog?"></a>Why should I create a new blog?</h3><h4 id="My-deprecated-blog"><a href="#My-deprecated-blog" class="headerlink" title="My deprecated blog"></a>My deprecated blog</h4><p>Actually, I already created a blog when I was a freshman.</p>
+<p>Here is the address:</p>
+<a class="button  regular" href='https://nicolasdavout.github.io' title='My deprecated blog'>My deprecated blog</a>
+
+<p>But I recorded too many redundant things, such as study notes, but I hardly have time to read them. Once I finish writing, I never open them again.</p>
+<p>I don’t think I will ever go back to look at those study notes because it’s too much trouble. It’s better to just search for relevant information online instead.</p>
+<p>I have been used to writing notes by hand for a long time, so I don’t really want to take notes on the computer.</p>
+<p>At the same time, I have more things to do and therefore don’t have any time to write more.</p>
+<p>So, I believe that what should be written is the essence and content that can be helpful for the future.</p>
+<p>My old blog had poor optimization, taking a long time to load each time. This time, with my new website, I will learn from the lesson and try my best to compress image size to improve loading speed.</p>
+<p>Not only that, but my abandoned blog has a mixture of markdown, latex, and html languages together. The images are directly placed in the text using base64 encoding method, which makes it very complicated and the efficiency is extremely low. In my new blog, I will be using Markdown language almost exclusively to write content.</p>
+<h4 id="My-old-domain-name-is-about-to-expire"><a href="#My-old-domain-name-is-about-to-expire" class="headerlink" title="My old domain name is about to expire"></a>My old domain name is about to expire</h4><p>The domain name I purchased on Tencent Cloud <a class="button  regular" href='ajie.fun' title='ajie.fun'>ajie.fun</a> is about to expire. I enjoyed a discount for the first year, but I am not planning to renew it.</p>
+<p>I have purchased a new domain name for this current blog. As for why the domain is .wiki, well, it’s because it was cheap.</p>
+<h4 id="Create-opportunities-for-the-future"><a href="#Create-opportunities-for-the-future" class="headerlink" title="Create opportunities for the future"></a>Create opportunities for the future</h4><p>When submitting my resume to other universities or companies, I can confidently present some of my achievements instead of submitting a blank piece of paper.</p>
+<p>Of course, I also hope that I can improve my English skills by writing blogs and coding because since university, I have hardly spent any time improving my English proficiency.</p>
+<p>For example, I feel like this article that I am writing now is quite colloquial.</p>
+<h4 id="Record-some-development-experience"><a href="#Record-some-development-experience" class="headerlink" title="Record some development experience"></a>Record some development experience</h4><p>Record some experiences during development, as well as the problems encountered.</p>
+<h4 id="Record-my-life"><a href="#Record-my-life" class="headerlink" title="Record my life"></a>Record my life</h4><p>College life is really a mess. It feels like I’m rushing to meet deadlines every day, without much time to take care of my personal life. I wish I could document my life so that when I look back on it years later, I might realize that college was just like that, and it passed by in the blink of an eye. It’s just like how now I always feel a bit nostalgic about my middle school and high school days.</p>
+<p>I need to constantly encourage myself to do more meaningful things rather than just getting by each day.</p>
+<p>I should record my instant ideas in a timely manner, whether they are related to learning or reflections on life.</p>
+<h3 id="In-this-new-blog"><a href="#In-this-new-blog" class="headerlink" title="In this new blog"></a>In this new blog</h3><p>I will mostly use English to write about my experiences, thoughts and things encountered in life. </p>
+<p>I know that this may cause many people to immediately close the website or rely on translation tools. However, I just want to showcase myself within my own field to myself and a small group of people.</p>
+<p>At the same time, I will also record some development ideas, thought processes, as well as the setbacks encountered and their solutions. </p>
+<p>I will no longer write about basic learning content and instead directly write down my ideas.</p>
+<h3 id="In-the-end"><a href="#In-the-end" class="headerlink" title="In the end"></a>In the end</h3><p>Hello world! And, good night.</p>
+]]></content>
+      <categories>
+        <category>Guidance</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Remove Baidu Netdisk download speed limit</title>
+    <url>/2023/04/03/BaiduNetdiskLimit/</url>
+    <content><![CDATA[<h2 id="F-k-the-netdisk"><a href="#F-k-the-netdisk" class="headerlink" title="F**k the netdisk"></a>F**k the netdisk</h2><p>Baidu Netdisk’s download speed limit is really annoying.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/03/BaiduNetdiskLimit/limitSpeed.webp"
+                      alt="Limit Speed"
+                >  </p>
+<h2 id="Remove-the-speed-limit"><a href="#Remove-the-speed-limit" class="headerlink" title="Remove the speed limit"></a>Remove the speed limit</h2><h3 id="Download-CE"><a href="#Download-CE" class="headerlink" title="Download CE"></a>Download CE</h3><p>The full name of CE modifier is Cheat Engine, and there is a tool called “Speedhack” that can change the running speed of process.</p>
+<h3 id="Find-the-download-process"><a href="#Find-the-download-process" class="headerlink" title="Find the download process"></a>Find the download process</h3><p>First, download any content from Baidu Netdisk at a very slow speed. Since the Baidu Netdisk download program runs in the background, we open the Task Manager and check the process.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/03/BaiduNetdiskLimit/findProcess.webp"
+                      alt="Find Process"
+                ></p>
+<p>It can be inferred from network usage that it is currently in transmission.</p>
+<h3 id="Get-the-PID-of-process"><a href="#Get-the-PID-of-process" class="headerlink" title="Get the PID of process"></a>Get the PID of process</h3><p>Retrieve detailed information about this process.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/03/BaiduNetdiskLimit/detailed.webp"
+                      alt="Details"
+                >  </p>
+<p>The PID of the process can be obtained from the table.</p>
+<p>In this example, the PID is 11940.</p>
+<h3 id="Speed-up-in-CE"><a href="#Speed-up-in-CE" class="headerlink" title="Speed up in CE"></a>Speed up in CE</h3><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/03/BaiduNetdiskLimit/open.webp"
+                      alt="Open"
+                >  </p>
+<p>Open the process in CE modifier by its PID. And set the speed of the adjuster to maximum and apply it.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/03/BaiduNetdiskLimit/speed.webp"
+                      alt="Speed"
+                >  </p>
+<p>It looks like the download speed has slowed down.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/03/BaiduNetdiskLimit/SppedAfter.webp"
+                      alt="SppedAfter"
+                >  </p>
+<p>Actually, the download speed is very fast, which can be seen by opening the task manager.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/03/BaiduNetdiskLimit/actually.webp"
+                      alt="Actually"
+                >  </p>
+<h2 id="Cracking-principle"><a href="#Cracking-principle" class="headerlink" title="Cracking principle"></a>Cracking principle</h2><p>Here is my rough speculation, which is basically correct. The principle of Baidu Netdisk’s speed limit is to limit the transfer of data block size within one process clock cycle. CE Modifier is a powerful tool that can even modify the computer’s memory. By modifying the process speed, CE Modifier actually modifies the process clock and increases the number of process clocks per unit time, thereby increasing the transfer speed. You have indeed limited the size of the data block, but I can accept more data blocks in the same amount of time.</p>
+]]></content>
+      <categories>
+        <category>Tech</category>
+      </categories>
+      <tags>
+        <tag>Tech</tag>
+        <tag>crack</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>The Hexo Blog Manager</title>
+    <url>/2023/04/09/TheHexoBlogManager/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Projects</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Journey to Macao</title>
+    <url>/2023/04/04/JourneyToMacao/</url>
+    <content><![CDATA[<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>[Provide a brief overview of your trip, including any major highlights or standout experiences.]</p>
+<h3 id="Day-Day-Number-Date"><a href="#Day-Day-Number-Date" class="headerlink" title="Day [Day Number]: [Date]"></a>Day [Day Number]: [Date]</h3><p>[Describe your experiences and activities for each day of your trip. Use subheadings for each day, and provide details about what you did, where you went, and any notable experiences.]</p>
+<h4 id="Morning"><a href="#Morning" class="headerlink" title="Morning"></a>Morning</h4><p>[Describe what you did in the morning, including any notable experiences or observations.]</p>
+<h4 id="Afternoon"><a href="#Afternoon" class="headerlink" title="Afternoon"></a>Afternoon</h4><p>[Describe what you did in the afternoon, including any notable experiences or observations.]</p>
+<h4 id="Evening"><a href="#Evening" class="headerlink" title="Evening"></a>Evening</h4><p>[Describe what you did in the evening, including any notable experiences or observations.]</p>
+]]></content>
+      <categories>
+        <category>Life</category>
+      </categories>
+      <tags>
+        <tag>Life</tag>
+        <tag>Journey</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>The Navigation System - Data Structure Project</title>
+    <url>/2023/04/05/DataStrutureProject/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Projects</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Project</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo Blog Manager</title>
+    <url>/2023/04/09/HexoBlogManagerDOCS-zh-CN/</url>
+    <content><![CDATA[<p>本文档帮助你更快上手 Hexo Blog Manager</p>
+<h2 id="实现的功能"><a href="#实现的功能" class="headerlink" title="实现的功能"></a>实现的功能</h2><ul>
+<li><p>markdown文件管理</p>
+<ul>
+<li>显示markdown文件的名字，优先级</li>
+<li>自由查看和修改markdown文件的详细头部信息</li>
+<li>快捷新建markdown文件（及其对应的文件夹）</li>
+<li>删除markdown文件（及其对应的文件夹）</li>
+</ul>
+</li>
+<li><p>博客生成与部署</p>
+</li>
+<li><p>自动备份</p>
+</li>
+</ul>
+<blockquote>
+<p>更多功能待开发</p>
+</blockquote>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="运行-Hexo-Blog-Manager"><a href="#运行-Hexo-Blog-Manager" class="headerlink" title="运行 Hexo Blog Manager"></a>运行 Hexo Blog Manager</h3><ul>
+<li>对于HexoBlogManager.jar</li>
+</ul>
+<blockquote>
+<p>要运行一个 .jar 文件，需要先安装 Java 运行时环境（JRE）。如果您没有安装 JRE，请从 Oracle 官方网站下载并安装。然后，按照以下步骤运行 Hexo Blog Manager.jar 文件：</p>
+</blockquote>
+<p><strong>您可以直接双击jar文件打开。</strong></p>
+<p>或者</p>
+<ol>
+<li>在终端中打开包含 HexoBlogManager.jar 文件的目录。</li>
+<li>在命令行或终端窗口中输入以下命令：<code>java -jar HexoBlogManager.jar</code></li>
+<li>按下回车键即可启动应用程序。</li>
+</ol>
+<ul>
+<li>对于Hexo Blog Manager.exe</li>
+</ul>
+<p><strong>要运行 .exe 文件，只需双击该文件即可启动应用程序。</strong></p>
+<h3 id="使用条件"><a href="#使用条件" class="headerlink" title="使用条件"></a>使用条件</h3><p>因为面向大部分用户，所以操作系统为 Windows，不支持Linux和MAC</p>
+<p>在使用前，您应该确保您的hexo能够成功执行<code>hexo clean</code> <code>hexo g</code> <code>hexo d</code>，否则可能会因为某些原因导致应用程序阻塞发生意外的错误。</p>
+<h3 id="用户界面介绍"><a href="#用户界面介绍" class="headerlink" title="用户界面介绍"></a>用户界面介绍</h3><p>该应用程序具有以下六个按钮：</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/HexoBlogManagerDOCS-zh-CN/1.webp"
+                      alt="PIC1"
+                ></p>
+<p>从上到下，从左到右依次是：</p>
+<ul>
+<li>Markdown文件管理：管理Markdown文件。您可以创建、编辑、重命名和删除Markdown文件。</li>
+<li>Blog生成与部署：清除，</li>
+<li>设置：通过此按钮，您可以更改博客路径。</li>
+<li>打开blog文章目录：通过此按钮，您可以快速找到所有文章。</li>
+<li>关于作者：查看应用程序的作者信息。</li>
+<li>帮助文档：查看应用程序的帮助文档。</li>
+</ul>
+<p>下面开始详细介绍各个部分</p>
+<h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><p>设置总共有两个：</p>
+<ul>
+<li>博客根目录</li>
+<li>cwebp目录</li>
+</ul>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/HexoBlogManagerDOCS-zh-CN/8.webp"
+                      alt="PIC8"
+                ></p>
+<p>第一个输入框填写您的hexo博客的根目录</p>
+<p>第二个输入框填写您的cwebp的根目录。</p>
+<h4 id="什么是cwebp？"><a href="#什么是cwebp？" class="headerlink" title="什么是cwebp？"></a>什么是cwebp？</h4><p>cwebp是一个可将图片文件压缩为 WebP 文件的工具</p>
+<p><a class="link"   href="https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.0-windows-x64.zip" >单机此处可下载 WebP for windows <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>这是介绍文档（无需了解，可以略过）</p>
+<p><a class="link"   href="https://developers.google.com/speed/webp/docs/cwebp" >https://developers.google.com/speed/webp/docs/cwebp <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="为什么需要cwebp？"><a href="#为什么需要cwebp？" class="headerlink" title="为什么需要cwebp？"></a>为什么需要cwebp？</h4><p>压缩为 WebP 文件可以极大程度压缩图片，节省流量等等成本，提升用户访问速度，给用户提升观感。</p>
+<h3 id="Markdown文件管理"><a href="#Markdown文件管理" class="headerlink" title="Markdown文件管理"></a>Markdown文件管理</h3><p>要管理Markdown文件，请单击“Markdown文件管理”按钮。在此页面中：</p>
+<h4 id="文章管理面板"><a href="#文章管理面板" class="headerlink" title="文章管理面板"></a>文章管理面板</h4><p>显示文章的文件名字，以及优先级(sticky)，此处显示的优先级和实际部署的几乎一样。显示的格式为<code>文章 (优先级)</code>，如果部分支持<code>top: true</code>的主题中的文章有top项目，那么top将会被排序在最前面。剩下不包含<code>top: true</code>的文章将根据优先级<code>sticky: num</code>从大到小排列，即按照sticky由大到小排序。如果部分文章没有<code>sticky: num</code>，那么这些文章将排序在最后。</p>
+<blockquote>
+<p>在下面这个例子中，example.md具有<code>top: true</code>属性，所以优先级最高，HelloWorld.md具有<code>sticky: 999</code>属性，值远大于其余的sticky值分别为（6，5，4，3，2，1，null），所以优先级高于sticky值较小或者没有的.md文件，example2.md没有<code>sticky: num</code>属性，所以优先级在最后。</p>
+</blockquote>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/HexoBlogManagerDOCS-zh-CN/2.webp"
+                      alt="PIC2"
+                ></p>
+<h4 id="文章新建面板"><a href="#文章新建面板" class="headerlink" title="文章新建面板"></a>文章新建面板</h4><p>单击“New Article”按钮以调出新建面板</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/H3.webp"
+                      alt="PIC3"
+                ></p>
+<ul>
+<li><code>Title</code>:文章的标题，为必填项</li>
+<li><code>Category</code>:选择文章的类型，这里一个文章只能选择一个种类。以后可能会改成可选择多个种类，（但是这样似乎与tag没有差别）。</li>
+<li><code>Tags</code>:选择文章的标签。按住ctrl单击鼠标左键以实现选择多项<blockquote>
+<p>注意：某些主题有最多支持标签数量，如果超出了这个数量，那么不同主题会有不同的处理方式。</p>
+</blockquote>
+</li>
+<li><code>Priority</code>:即sticky，定义文章的优先级。如果将右边Enable勾选，则开启，否则不使用该标签。</li>
+<li><code>Abstract</code>:即excerpt，定义文章的摘要。如果将右边Enable勾选，则开启，否则不使用该标签。</li>
+<li><code>Thumbnail</code>:选择文章的略缩图。如果将右边Enable勾选，则开启，否则不使用该标签。</li>
+<li><code>Cover</code>:选择文章的封面。如果将右边Enable勾选，则开启，否则不使用该标签。</li>
+</ul>
+<blockquote>
+<p>值得注意的是，这里采用的是写入绝对路径的方法。比如</p>
+</blockquote>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/HexoBlogManagerDOCS-zh-CN/4.webp"
+                      alt="PIC4"
+                ></p>
+<blockquote>
+<p>如果您安装了某些插件更改了生成静态网页后的路径，比如abbrlink等等，那么此功能将不可使用，请在后面的属性修改面板中手动配置。</p>
+</blockquote>
+<p>单机submit按钮以新建您的文章。</p>
+<p>在新建完成之后，会弹出提示框，您可以单机其中的按钮快速访问您新建的文件。</p>
+<p><strong>管理您的标签</strong></p>
+<p>单机新建面板中的<code>Categories &amp; tags management</code>按钮以管理您的种类和标签。在上方输入框输入后单击<code>+</code>即可添加，选中一个项目单击<code>-</code>即可删除。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/HexoBlogManagerDOCS-zh-CN/6.webp"
+                      alt="PIC6"
+                ></p>
+<h4 id="文章删除"><a href="#文章删除" class="headerlink" title="文章删除"></a>文章删除</h4><p>选中文章，然后单击删除“Delete Article”按钮以删除文章及其对应的文件夹。如果选中多个，那么会删除首个。为确保安全性，选中文章后单机删除会弹出提示框提示是否确认删除。</p>
+<blockquote>
+<p>如果您误删了文件不用担心，在每次打开Hexo Blog Manager时都会自动为您备份<code>_posts</code>文件夹下的所有文件至与之同一目录下的<code>backup</code>文件夹</p>
+</blockquote>
+<h4 id="刷新按钮"><a href="#刷新按钮" class="headerlink" title="刷新按钮"></a>刷新按钮</h4><p>如果您手动使用编辑器修改了文件的属性值，那么单机刷新按钮即可重新读取内容。</p>
+<h4 id="属性查看与修改面板"><a href="#属性查看与修改面板" class="headerlink" title="属性查看与修改面板"></a>属性查看与修改面板</h4><p>选中一篇文章，单击<code>Details</code>按钮，即可访问该文件的属性值。</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/HexoBlogManagerDOCS-zh-CN/5.webp"
+                      alt="PIC5"
+                ></p>
+<p>您可以自由给.md文件的头部添加<code>Add new</code>和删除键值对<code>Remove</code>。但是，键必须是以下中的一个</p>
+<ul>
+<li>title</li>
+<li>date</li>
+<li>updated</li>
+<li>categories</li>
+<li>tags</li>
+<li>sticky</li>
+<li>keywords</li>
+<li>description</li>
+<li>thumbnail</li>
+<li>cover</li>
+<li>top</li>
+<li>comments</li>
+<li>excerpt</li>
+<li>toc</li>
+<li>mathjax</li>
+</ul>
+<p>否则将不会添加键值对成功</p>
+<p>属性查看与修改面板在读取键值对时，也是按照键的这个顺序排列的。</p>
+<p>在您完成修改之后，单机<code>Submit Changes</code>将这些修改应用到文件中。</p>
+<h3 id="Blog生成与部署"><a href="#Blog生成与部署" class="headerlink" title="Blog生成与部署"></a>Blog生成与部署</h3><p>要生成和部署博客，请单击“Blog生成与部署”按钮。在此页面中，您可以执行以下操作：</p>
+<ul>
+<li>清除内容，即<code>hexo clean</code></li>
+<li>生成并本地打开服务器 <a class="link"   href="http://localhost:4000/" >http://localhost:4000/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> ，即<code>hexo g &amp;&amp; hexo s</code></li>
+<li>生成并部署到GitHub，即<code>hexo g &amp;&amp; hexo d</code></li>
+</ul>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/2023/04/09/HexoBlogManagerDOCS-zh-CN/7.webp"
+                      alt="PIC7"
+                ></p>
+<blockquote>
+<p>在您本地打开服务器后，最好不要通过任务管理器来强制结束进程，否则可能导致占用4000端口的后台进程无法释放。在单击<code>Generate and open on localhost</code>之后，Hexo Blog Manager会强制结束当前占用4000端口的进程（如果有）。</p>
+</blockquote>
+<h3 id="打开blog文件目录"><a href="#打开blog文件目录" class="headerlink" title="打开blog文件目录"></a>打开blog文件目录</h3><p>单击“文件夹”图标按钮，即可快速访问您的博客的.md文件。</p>
+<h3 id="关于作者"><a href="#关于作者" class="headerlink" title="关于作者"></a>关于作者</h3><p>要查看应用程序的作者信息，请单击“关于作者”按钮，可以向我的邮箱反馈bug，也可以访问我的GitHub页面。</p>
+<h3 id="帮助文档"><a href="#帮助文档" class="headerlink" title="帮助文档"></a>帮助文档</h3><p>要查看应用程序的帮助文档，请单击带有“帮助文档”图标的按钮。</p>
+]]></content>
+      <categories>
+        <category>Projects</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Personal works</tag>
+        <tag>DOCS</tag>
+      </tags>
+  </entry>
 </search>
