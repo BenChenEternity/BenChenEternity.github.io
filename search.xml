@@ -189,6 +189,7 @@
 <p><a class="link"   href="https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.0-windows-x64.zip" >单机此处可下载 WebP for windows <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
 <p>这是介绍文档（无需了解，可以略过）</p>
 <p><a class="link"   href="https://developers.google.com/speed/webp/docs/cwebp" >https://developers.google.com/speed/webp/docs/cwebp <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="为什么需要cwebp？"><a href="#为什么需要cwebp？" class="headerlink" title="为什么需要cwebp？"></a>为什么需要cwebp？</h4><p>压缩为 WebP 文件可以极大程度压缩图片，节省流量等等成本，提升用户访问速度，给用户提升观感。</p>
 <h3 id="Markdown文件管理"><a href="#Markdown文件管理" class="headerlink" title="Markdown文件管理"></a>Markdown文件管理</h3><p>要管理Markdown文件，请单击“Markdown文件管理”按钮。在此页面中：</p>
 <h4 id="文章管理面板"><a href="#文章管理面板" class="headerlink" title="文章管理面板"></a>文章管理面板</h4><p>显示文章的文件名字，以及优先级(sticky)，此处显示的优先级和实际部署的几乎一样。显示的格式为<code>文章 (优先级)</code>，如果部分支持<code>top: true</code>的主题中的文章有top项目，那么top将会被排序在最前面。剩下不包含<code>top: true</code>的文章将根据优先级<code>sticky: num</code>从大到小排列，即按照sticky由大到小排序。如果部分文章没有<code>sticky: num</code>，那么这些文章将排序在最后。</p>
 <blockquote>
