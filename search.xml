@@ -263,60 +263,6 @@
                       alt="PIC6"
                 ></p>
 <h4 id="Article-Deletion"><a href="#Article-Deletion" class="headerlink" title="Article Deletion"></a>Article Deletion</h4><p>Select an article and then click the “Delete Article” button to delete the article and its corresponding folder. If multiple articles are selected, only the first one will be deleted. To ensure safety, a prompt box will pop up after selecting the article, asking if you want to confirm the deletion.</p>
-<h4 id="Article-Management-Panel-1"><a href="#Article-Management-Panel-1" class="headerlink" title="Article Management Panel"></a>Article Management Panel</h4><p>Displays the name of the article files and their priority (sticky). The displayed priority is almost the same as the actual deployment. The format displayed is <code>article (priority)</code>. If some articles in themes that support <code>top: true</code> have a top project, then the top will be sorted first. The remaining articles that do not include <code>top: true</code> will be arranged in descending order according to the priority <code>sticky: num</code>, i.e., sorted from the highest to the lowest based on the sticky value. If some articles do not have <code>sticky: num</code>, they will be sorted last.</p>
-<blockquote>
-<p>In the example below, example.md has the <code>top: true</code> attribute, so it has the highest priority. HelloWorld.md has a <code>sticky: 999</code> attribute, with a value much higher than the rest of the sticky values, which are (6, 5, 4, 3, 2, 1, null), so it has a higher priority than the .md files with smaller or no sticky values. example2.md does not have the <code>sticky: num</code> attribute, so it has the lowest priority.</p>
-</blockquote>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/2.webp"
-                      alt="PIC2"
-                ></p>
-<h4 id="Article-Creation-Panel-1"><a href="#Article-Creation-Panel-1" class="headerlink" title="Article Creation Panel"></a>Article Creation Panel</h4><p>Click the “New Article” button to call up the creation panel.</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/3.webp"
-                      alt="PIC3"
-                ></p>
-<ul>
-<li><code>Title</code>: The title of the article, which is a required field.</li>
-<li><code>Category</code>: Select the type of article. Here, an article can only select one type. In the future, it may be changed to allow multiple types to be selected (but this seems to have no difference from tags).</li>
-<li><code>Tags</code>: Select the tags of the article. Hold down the Ctrl key and click the left mouse button to select multiple items.</li>
-</ul>
-<blockquote>
-<p>Note: Some themes have a maximum number of supported tags. If this number is exceeded, different themes will handle it differently.</p>
-</blockquote>
-<ul>
-<li><code>Priority</code>: That is sticky, which defines the priority of the article. If you check the Enable on the right, it will be enabled. Otherwise, this tag will not be used.</li>
-<li><code>Abstract</code>: That is excerpt, which defines the abstract of the article. If you check the Enable on the right, it will be enabled. Otherwise, this tag will not be used.</li>
-<li><code>Thumbnail</code>: Select the thumbnail of the article. If you check the Enable on the right, it will be enabled. Otherwise, this tag will not be used.</li>
-<li><code>Cover</code>: Select the cover of the article. If you check the Enable on the right, it will be enabled. Otherwise, this tag will not be used.</li>
-</ul>
-<blockquote>
-<p>It is worth noting that the absolute path writing method is used here. For example,</p>
-</blockquote>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/4.webp"
-                      alt="PIC4"
-                ></p>
-<blockquote>
-<p>If you have installed some plugins that change the path after generating the static website, such as abbrlink, etc., this function will not be available, please manually configure it in the subsequent attribute modification panel.</p>
-</blockquote>
-<p>Click the submit button to create your article.</p>
-<p>After creating it, a prompt box will pop up, and you can click the button inside to quickly access the file you created.</p>
-<p><strong>Manage Your Tags</strong></p>
-<p>Click the <code>Categories &amp; tags management</code> button in the new panel to manage your categories and tags. Enter the information in the input box at the top and click <code>+</code> to add it, and select a project and click <code>-</code> to delete it.</p>
-<p><img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="/2023/04/09/TheHexoBlogManagerDOCS-en-US/6.webp"
-                      alt="PIC6"
-                ></p>
-<h4 id="Article-Deletion-1"><a href="#Article-Deletion-1" class="headerlink" title="Article Deletion"></a>Article Deletion</h4><p>Select an article and then click the “Delete Article” button to delete the article and its corresponding folder. If multiple articles are selected, only the first one will be deleted. To ensure safety, a prompt box will pop up after selecting the article, asking if you want to confirm the deletion.</p>
 <blockquote>
 <p>Don’t worry if you accidentally delete a file. Every time you open Hexo Blog Manager, all files in the <code>_posts</code> folder will be automatically backed up to a <code>backup</code> folder in the same directory.</p>
 </blockquote>
