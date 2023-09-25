@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="description" content="Hexo Theme Redefine">
+    <meta name="author" content="Ben Chen">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://evan.beee.top" crossorigin>
+    
+        
+            <link rel="preconnect" href="https://unpkg.com" crossorigin>
+        
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/backup/backup[2023-09-25-18-48]/overthewirewargamewalkthrough.html"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="The walkthrough strategy of the Internet security bandit wargame">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OverthewireWargameWalkthrough">
+<meta property="og:url" content="http://example.com/backup/backup[2023-09-25-18-48]/OverthewireWargameWalkthrough.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="The walkthrough strategy of the Internet security bandit wargame">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-25T10:29:25.000Z">
+<meta property="article:modified_time" content="2023-09-25T10:48:48.726Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Record">
+<meta property="article:tag" content="Network">
+<meta name="twitter:card" content="summary">
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/icon.ico" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.ico">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/icon.ico">
+    <!--- Page Info-->
+    
+    <title>
+        
+            OverthewireWargameWalkthrough -
+        
+        Ben
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/hexo-theme-redefine@2.0.3/source/assets/fonts.css">
+    <!--- Font Part-->
+    
+    
+    
+    
+
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    let Global = window.Global || {};
+    Global.hexo_config = {"hostname":"example.com","root":"/","language":"en"};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[""]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"recommendation":{"enable":false,"title":"recommendations","limit":3,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"busuanzi_counter":{"enable":false,"site_pv":false,"site_uv":false,"post_pv":false},"pjax":true,"open_graph":true},"home_banner":{"enable":true,"image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Exploration inspires possibilities","subtitle":{"text":[],"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":"ture","links":{"github":"https://github.com/BenChenEternity","instagram":null,"zhihu":null,"twitter":null,"email":"eternitybenthegreat@gamil.com"}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"audios":[{"name":null,"artist":null,"url":null,"cover":null},{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.0.3","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"About":{"path":"/about","icon":"fa-regular fa-user"},"Category":{"path":"/category","icon":"fa-regular fa-books"},"Chat-GPT":{"path":"/chat-gpt","icon":"fa-solid fa-microchip-ai"},"Links":{"icon":"fa-regular fa-link","submenus":{"My deprecated blogs":"https://nicolasdavout.github.io","Friends":"/links"}}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}}};
+    Global.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    <link rel="stylesheet" href="https://unpkg.com/hexo-theme-redefine@2.0.3/source/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/hexo-theme-redefine@2.0.3/source/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/hexo-theme-redefine@2.0.3/source/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/hexo-theme-redefine@2.0.3/source/fontawesome/regular.min.css">
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="main-content-container">
+
+        <div class="main-content-header">
+            <header class="navbar-container">
+    
+    <div class="navbar-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/icon.ico">
+                </a>
+            
+            <a class="logo-title" href="/">
+                
+                Ben
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        HOME
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/archives"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-archive"></i>
+                                        
+                                        ARCHIVES
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/about"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        ABOUT
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/category"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-books"></i>
+                                        
+                                        CATEGORY
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/chat-gpt"  >
+                                    
+                                        
+                                            <i class="fa-solid fa-microchip-ai"></i>
+                                        
+                                        CHAT-GPT
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                            <i class="fa-regular fa-link"></i>
+                                        
+                                        LINKS&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a target="_blank" rel="noopener" href="https://nicolasdavout.github.io">MY DEPRECATED BLOGS
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/links">FRIENDS
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i></div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="navbar-drawer">
+        <ul class="drawer-navbar-list">
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                HOME
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/archives"  >
+                             
+                                
+                                    <i class="fa-regular fa-archive"></i>
+                                
+                                ARCHIVES
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/about"  >
+                             
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                ABOUT
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/category"  >
+                             
+                                
+                                    <i class="fa-regular fa-books"></i>
+                                
+                                CATEGORY
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/chat-gpt"  >
+                             
+                                
+                                    <i class="fa-solid fa-microchip-ai"></i>
+                                
+                                CHAT-GPT
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                    <i class="fa-regular fa-link"></i>
+                                
+                                LINKS&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://nicolasdavout.github.io">MY DEPRECATED BLOGS</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/links">FRIENDS</a>
+                            </li>
+                        
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="page-template-container">
+        
+        
+        <div class="page-template-content markdown-body">
+            
+                <h1 id="Over-The-Wire-Bandit-Wargame-Game-Walkthrough"><a href="#Over-The-Wire-Bandit-Wargame-Game-Walkthrough" class="headerlink" title="Over The Wire Bandit Wargame Game Walkthrough"></a>Over The Wire Bandit Wargame Game Walkthrough</h1><p><strong>Wargame address:</strong></p>
+<p><a class="link" target="_blank" rel="noopener" href="https://overthewire.org/wargames/">https://overthewire.org/wargames/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p><strong>Target host &amp; port:</strong></p>
+<p>bandit.labs.overthewire.org:2220</p>
+<h2 id="Bandit-Level-0"><a href="#Bandit-Level-0" class="headerlink" title="Bandit Level 0"></a>Bandit Level 0</h2><h3 id="Level-Goal"><a href="#Level-Goal" class="headerlink" title="Level Goal"></a>Level Goal</h3><p>The goal of this level is for you to log into the game using SSH. The host to which you need to connect is bandit.labs.overthewire.org, on port 2220. The username is bandit0 and the password is bandit0. Once logged in, go to the Level 1 page to find out how to beat Level 1.</p>
+<h3 id="Commands-you-may-need-to-solve-this-level"><a href="#Commands-you-may-need-to-solve-this-level" class="headerlink" title="Commands you may need to solve this level"></a>Commands you may need to solve this level</h3><p>ssh</p>
+<h3 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h3><h4 id="Login"><a href="#Login" class="headerlink" title="Login"></a>Login</h4><blockquote>
+<p>cmd&gt; <u>ssh -p 2220 <a class="link" href="mailto:&#x62;&#97;&#x6e;&#100;&#105;&#x74;&#48;&#64;&#98;&#x61;&#x6e;&#x64;&#105;&#116;&#46;&#108;&#x61;&#x62;&#115;&#x2e;&#111;&#x76;&#101;&#x72;&#x74;&#x68;&#101;&#x77;&#x69;&#114;&#101;&#x2e;&#111;&#x72;&#103;">&#x62;&#97;&#x6e;&#100;&#105;&#x74;&#48;&#64;&#98;&#x61;&#x6e;&#x64;&#105;&#116;&#46;&#108;&#x61;&#x62;&#115;&#x2e;&#111;&#x76;&#101;&#x72;&#x74;&#x68;&#101;&#x77;&#x69;&#114;&#101;&#x2e;&#111;&#x72;&#103; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></u></p>
+<p>ssh&gt; <a class="link" href="mailto:&#x62;&#97;&#110;&#x64;&#105;&#116;&#x30;&#64;&#x62;&#97;&#110;&#100;&#105;&#116;&#46;&#x6c;&#97;&#x62;&#x73;&#x2e;&#111;&#x76;&#x65;&#x72;&#x74;&#104;&#x65;&#119;&#x69;&#x72;&#x65;&#46;&#x6f;&#114;&#x67;">&#x62;&#97;&#110;&#x64;&#105;&#116;&#x30;&#64;&#x62;&#97;&#110;&#100;&#105;&#116;&#46;&#x6c;&#97;&#x62;&#x73;&#x2e;&#111;&#x76;&#x65;&#x72;&#x74;&#104;&#x65;&#119;&#x69;&#x72;&#x65;&#46;&#x6f;&#114;&#x67; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>‘s password: <u>bandit0</u></p>
+</blockquote>
+<h2 id="Bandit-Level-0-→-Level-1"><a href="#Bandit-Level-0-→-Level-1" class="headerlink" title="Bandit Level 0 → Level 1"></a>Bandit Level 0 → Level 1</h2><h3 id="Level-Goal-1"><a href="#Level-Goal-1" class="headerlink" title="Level Goal"></a>Level Goal</h3><p>The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.</p>
+<h3 id="Commands-you-may-need-to-solve-this-level-1"><a href="#Commands-you-may-need-to-solve-this-level-1" class="headerlink" title="Commands you may need to solve this level"></a>Commands you may need to solve this level</h3><p>ls , cd , cat , file , du , find</p>
+<h3 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution"></a>Solution</h3><h4 id="Read-file"><a href="#Read-file" class="headerlink" title="Read file"></a>Read file</h4><blockquote>
+<p>ssh&gt; bandit0@bandit:~$ <u>ls</u></p>
+<p>ssh&gt; <em>readme</em></p>
+<p>ssh&gt; bandit0@bandit:~$ <u>cat readme</u></p>
+<p>ssh&gt; <em>NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL</em></p>
+</blockquote>
+<h2 id="Bandit-Level-1-→-Level-2"><a href="#Bandit-Level-1-→-Level-2" class="headerlink" title="Bandit Level 1 → Level 2"></a>Bandit Level 1 → Level 2</h2><h3 id="Level-Goal-2"><a href="#Level-Goal-2" class="headerlink" title="Level Goal"></a>Level Goal</h3><p>The password for the next level is stored in a file called - located in the home directory</p>
+<h3 id="Commands-you-may-need-to-solve-this-level-2"><a href="#Commands-you-may-need-to-solve-this-level-2" class="headerlink" title="Commands you may need to solve this level"></a>Commands you may need to solve this level</h3><p>ls , cd , cat , file , du , find</p>
+<h3 id="Solution-2"><a href="#Solution-2" class="headerlink" title="Solution"></a>Solution</h3><h4 id="Login-1"><a href="#Login-1" class="headerlink" title="Login"></a>Login</h4><blockquote>
+<p>cmd&gt; <u>ssh -p 2220 <a class="link" href="mailto:&#x62;&#97;&#x6e;&#100;&#105;&#x74;&#49;&#x40;&#x62;&#x61;&#x6e;&#x64;&#x69;&#x74;&#46;&#108;&#x61;&#x62;&#x73;&#46;&#111;&#118;&#x65;&#x72;&#116;&#x68;&#x65;&#119;&#x69;&#x72;&#101;&#x2e;&#111;&#114;&#x67;">&#x62;&#97;&#x6e;&#100;&#105;&#x74;&#49;&#x40;&#x62;&#x61;&#x6e;&#x64;&#x69;&#x74;&#46;&#108;&#x61;&#x62;&#x73;&#46;&#111;&#118;&#x65;&#x72;&#116;&#x68;&#x65;&#119;&#x69;&#x72;&#101;&#x2e;&#111;&#114;&#x67; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></u></p>
+<p>ssh&gt; <a class="link" href="mailto:&#98;&#x61;&#x6e;&#x64;&#x69;&#116;&#49;&#64;&#x62;&#x61;&#x6e;&#x64;&#x69;&#x74;&#46;&#108;&#x61;&#98;&#x73;&#46;&#x6f;&#118;&#x65;&#x72;&#x74;&#104;&#x65;&#x77;&#105;&#114;&#x65;&#x2e;&#111;&#x72;&#103;">&#98;&#x61;&#x6e;&#x64;&#x69;&#116;&#49;&#64;&#x62;&#x61;&#x6e;&#x64;&#x69;&#x74;&#46;&#108;&#x61;&#98;&#x73;&#46;&#x6f;&#118;&#x65;&#x72;&#x74;&#104;&#x65;&#x77;&#105;&#114;&#x65;&#x2e;&#111;&#x72;&#103; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>‘s password: <u>NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL</u></p>
+</blockquote>
+<h4 id="Read-file-1"><a href="#Read-file-1" class="headerlink" title="Read file"></a>Read file</h4><blockquote>
+<p>ssh&gt; bandit1@bandit:~$ <u>ls</u></p>
+<p>ssh&gt; <em>-</em></p>
+</blockquote>
+<p>Warning: Read this file with relative path will not success.</p>
+<p>When you run a command like cat -, the shell interprets the hyphen as a special character that indicates standard input (stdin). In other words, it’s telling cat to read from the standard input, which means you can type text and it will be echoed back to you until you signal the end of input with a Ctrl+D (or Ctrl+Z on Windows). So, when you enter cat - and press Enter, the shell is waiting for your input.</p>
+<blockquote>
+<p>ssh&gt; bandit0@bandit:~$ <u>cat .&#x2F;-</u></p>
+<p>ssh&gt; <em>rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi</em></p>
+</blockquote>
+<h2 id="Bandit-Level-2-→-Level-3"><a href="#Bandit-Level-2-→-Level-3" class="headerlink" title="Bandit Level 2 → Level 3"></a>Bandit Level 2 → Level 3</h2><h3 id="Level-Goal-3"><a href="#Level-Goal-3" class="headerlink" title="Level Goal"></a>Level Goal</h3><p>The password for the next level is stored in a file called <strong>spaces in this filename</strong> located in the home directory</p>
+<h3 id="Commands-you-may-need-to-solve-this-level-3"><a href="#Commands-you-may-need-to-solve-this-level-3" class="headerlink" title="Commands you may need to solve this level"></a>Commands you may need to solve this level</h3><p>ls , cd , cat , file , du , find</p>
+<h3 id="Key"><a href="#Key" class="headerlink" title="Key"></a>Key</h3><ul>
+<li>Space Escaping</li>
+</ul>
+<h3 id="Solution-3"><a href="#Solution-3" class="headerlink" title="Solution"></a>Solution</h3><h4 id="Login-2"><a href="#Login-2" class="headerlink" title="Login"></a>Login</h4><blockquote>
+<p>cmd&gt; <u>ssh -p 2220 <a class="link" href="mailto:&#98;&#97;&#110;&#100;&#105;&#116;&#x32;&#x40;&#x62;&#97;&#110;&#x64;&#105;&#116;&#x2e;&#108;&#x61;&#x62;&#x73;&#46;&#x6f;&#118;&#101;&#x72;&#x74;&#x68;&#x65;&#119;&#105;&#114;&#101;&#x2e;&#x6f;&#114;&#103;">&#98;&#97;&#110;&#100;&#105;&#116;&#x32;&#x40;&#x62;&#97;&#110;&#x64;&#105;&#116;&#x2e;&#108;&#x61;&#x62;&#x73;&#46;&#x6f;&#118;&#101;&#x72;&#x74;&#x68;&#x65;&#119;&#105;&#114;&#101;&#x2e;&#x6f;&#114;&#103; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></u></p>
+<p>ssh&gt; <a class="link" href="mailto:&#98;&#x61;&#x6e;&#100;&#x69;&#x74;&#50;&#x40;&#x62;&#x61;&#110;&#x64;&#105;&#x74;&#x2e;&#x6c;&#x61;&#x62;&#115;&#x2e;&#x6f;&#118;&#101;&#114;&#116;&#x68;&#x65;&#x77;&#x69;&#114;&#101;&#x2e;&#x6f;&#x72;&#x67;">&#98;&#x61;&#x6e;&#100;&#x69;&#x74;&#50;&#x40;&#x62;&#x61;&#110;&#x64;&#105;&#x74;&#x2e;&#x6c;&#x61;&#x62;&#115;&#x2e;&#x6f;&#118;&#101;&#114;&#116;&#x68;&#x65;&#x77;&#x69;&#114;&#101;&#x2e;&#x6f;&#x72;&#x67; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>‘s password: <u>rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi</u></p>
+</blockquote>
+<h4 id="Read-file-2"><a href="#Read-file-2" class="headerlink" title="Read file"></a>Read file</h4><blockquote>
+<p>ssh&gt; bandit2@bandit:~$ <u>ls</u></p>
+<p>ssh&gt; <em>spaces in this filename</em></p>
+<p>ssh&gt; bandit2@bandit:~$ <u>cat spaces\ in\ this\ filename</u></p>
+<p>ssh&gt; <em>aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG</em></p>
+</blockquote>
+<h2 id="Bandit-Level-3-→-Level-4"><a href="#Bandit-Level-3-→-Level-4" class="headerlink" title="Bandit Level 3 → Level 4"></a>Bandit Level 3 → Level 4</h2><h3 id="Level-Goal-4"><a href="#Level-Goal-4" class="headerlink" title="Level Goal"></a>Level Goal</h3><p>The password for the next level is stored in a hidden file in the inhere directory.</p>
+<h3 id="Commands-you-may-need-to-solve-this-level-4"><a href="#Commands-you-may-need-to-solve-this-level-4" class="headerlink" title="Commands you may need to solve this level"></a>Commands you may need to solve this level</h3><p>ls , cd , cat , file , du , find</p>
+<h3 id="Solution-4"><a href="#Solution-4" class="headerlink" title="Solution"></a>Solution</h3><h4 id="Login-3"><a href="#Login-3" class="headerlink" title="Login"></a>Login</h4><blockquote>
+<p>cmd&gt; <u>ssh -p 2220 <a class="link" href="mailto:&#98;&#97;&#110;&#x64;&#105;&#x74;&#x33;&#64;&#x62;&#97;&#x6e;&#x64;&#105;&#116;&#46;&#108;&#x61;&#x62;&#x73;&#46;&#x6f;&#x76;&#x65;&#x72;&#x74;&#104;&#x65;&#119;&#105;&#114;&#x65;&#46;&#x6f;&#114;&#103;">&#98;&#97;&#110;&#x64;&#105;&#x74;&#x33;&#64;&#x62;&#97;&#x6e;&#x64;&#105;&#116;&#46;&#108;&#x61;&#x62;&#x73;&#46;&#x6f;&#x76;&#x65;&#x72;&#x74;&#104;&#x65;&#119;&#105;&#114;&#x65;&#46;&#x6f;&#114;&#103; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></u></p>
+<p>ssh&gt; <a class="link" href="mailto:&#x62;&#97;&#110;&#100;&#x69;&#116;&#48;&#x40;&#98;&#97;&#110;&#x64;&#x69;&#x74;&#x2e;&#108;&#x61;&#98;&#115;&#x2e;&#x6f;&#x76;&#x65;&#114;&#x74;&#104;&#101;&#119;&#105;&#114;&#101;&#46;&#x6f;&#x72;&#103;">&#x62;&#97;&#110;&#100;&#x69;&#116;&#48;&#x40;&#98;&#97;&#110;&#x64;&#x69;&#x74;&#x2e;&#108;&#x61;&#98;&#115;&#x2e;&#x6f;&#x76;&#x65;&#114;&#x74;&#104;&#101;&#119;&#105;&#114;&#101;&#46;&#x6f;&#x72;&#103; <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>‘s password: <u>aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG</u></p>
+</blockquote>
+<h4 id="Read-file-3"><a href="#Read-file-3" class="headerlink" title="Read file"></a>Read file</h4><blockquote>
+<p>ssh&gt; bandit3@bandit:~$ <u>ls</u></p>
+<p>ssh&gt; <em>inhere</em></p>
+<p>ssh&gt; bandit3@bandit:~$ <u>cd inhere</u></p>
+<p>ssh&gt; bandit3@bandit:~&#x2F;inhere$ <u>ls</u></p>
+<p>ssh&gt; bandit3@bandit:~&#x2F;inhere$ <u>ls -al</u></p>
+<p>ssh&gt; <em>total 12</em></p>
+<p>ssh&gt; <em>drwxr-xr-x 2 root    root    4096 Apr 23 18:04 .</em></p>
+<p>ssh&gt; <em>drwxr-xr-x 3 root    root    4096 Apr 23 18:04 ..</em></p>
+<p>ssh&gt; <em>-rw-r—– 1 bandit4 bandit3   33 Apr 23 18:04 .hidden</em></p>
+<p>ssh&gt; bandit3@bandit:~&#x2F;inhere$ <u>cat .hidden</u></p>
+<p>ssh&gt; <em>2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe</em></p>
+</blockquote>
+<h2 id="Bandit-Level-4-→-Level-5"><a href="#Bandit-Level-4-→-Level-5" class="headerlink" title="Bandit Level 4 → Level 5"></a>Bandit Level 4 → Level 5</h2><h3 id="Level-Goal-5"><a href="#Level-Goal-5" class="headerlink" title="Level Goal"></a>Level Goal</h3><p>The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.</p>
+<h3 id="Commands-you-may-need-to-solve-this-level-5"><a href="#Commands-you-may-need-to-solve-this-level-5" class="headerlink" title="Commands you may need to solve this level"></a>Commands you may need to solve this level</h3><p>ls , cd , cat , file , du , find</p>
+<h2 id="Bandit-Level-5-→-Level-6"><a href="#Bandit-Level-5-→-Level-6" class="headerlink" title="Bandit Level 5 → Level 6"></a>Bandit Level 5 → Level 6</h2><h3 id="Level-Goal-6"><a href="#Level-Goal-6" class="headerlink" title="Level Goal"></a>Level Goal</h3><p>The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:</p>
+<ul>
+<li>human-readable</li>
+<li>1033 bytes in size</li>
+<li>not executable</li>
+</ul>
+<h3 id="Commands-you-may-need-to-solve-this-level-6"><a href="#Commands-you-may-need-to-solve-this-level-6" class="headerlink" title="Commands you may need to solve this level"></a>Commands you may need to solve this level</h3><p>ls , cd , cat , file , du , find</p>
+<h2 id="Bandit-Level-6-→-Level-7"><a href="#Bandit-Level-6-→-Level-7" class="headerlink" title="Bandit Level 6 → Level 7"></a>Bandit Level 6 → Level 7</h2><h3 id="Level-Goal-7"><a href="#Level-Goal-7" class="headerlink" title="Level Goal"></a>Level Goal</h3><p>The password for the next level is stored somewhere on the server and has all of the following properties:</p>
+<ul>
+<li>owned by user bandit7</li>
+<li>owned by group bandit6</li>
+<li>33 bytes in size</li>
+</ul>
+<h3 id="Commands-you-may-need-to-solve-this-level-7"><a href="#Commands-you-may-need-to-solve-this-level-7" class="headerlink" title="Commands you may need to solve this level"></a>Commands you may need to solve this level</h3><p>ls , cd , cat , file , du , find , grep</p>
+<h2 id="Bandit-Level-7-→-Level-8"><a href="#Bandit-Level-7-→-Level-8" class="headerlink" title="Bandit Level 7 → Level 8"></a>Bandit Level 7 → Level 8</h2><h3 id="Level-Goal-8"><a href="#Level-Goal-8" class="headerlink" title="Level Goal"></a>Level Goal</h3><p>The password for the next level is stored in the file data.txt next to the word millionth</p>
+<h3 id="Commands-you-may-need-to-solve-this-level-8"><a href="#Commands-you-may-need-to-solve-this-level-8" class="headerlink" title="Commands you may need to solve this level"></a>Commands you may need to solve this level</h3><p>man, grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd</p>
+<h2 id="Bandit-Level-8-→-Level-9"><a href="#Bandit-Level-8-→-Level-9" class="headerlink" title="Bandit Level 8 → Level 9"></a>Bandit Level 8 → Level 9</h2><h3 id="Level-Goal-9"><a href="#Level-Goal-9" class="headerlink" title="Level Goal"></a>Level Goal</h3><p>The password for the next level is stored in the file data.txt and is the only line of text that occurs only once</p>
+<h3 id="Commands-you-may-need-to-solve-this-level-9"><a href="#Commands-you-may-need-to-solve-this-level-9" class="headerlink" title="Commands you may need to solve this level"></a>Commands you may need to solve this level</h3><p>grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd</p>
+<h2 id="Bandit-Level-9-→-Level-10"><a href="#Bandit-Level-9-→-Level-10" class="headerlink" title="Bandit Level 9 → Level 10"></a>Bandit Level 9 → Level 10</h2><h3 id="Level-Goal-10"><a href="#Level-Goal-10" class="headerlink" title="Level Goal"></a>Level Goal</h3><p>The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘&#x3D;’ characters.</p>
+<h3 id="Commands-you-may-need-to-solve-this-level-10"><a href="#Commands-you-may-need-to-solve-this-level-10" class="headerlink" title="Commands you may need to solve this level"></a>Commands you may need to solve this level</h3><p>grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd</p>
+<h2 id="Bandit-Level-10-→-Level-11"><a href="#Bandit-Level-10-→-Level-11" class="headerlink" title="Bandit Level 10 → Level 11"></a>Bandit Level 10 → Level 11</h2><h3 id="Level-Goal-11"><a href="#Level-Goal-11" class="headerlink" title="Level Goal"></a>Level Goal</h3><p>The password for the next level is stored in the file data.txt, which contains base64 encoded data</p>
+<h3 id="Commands-you-may-need-to-solve-this-level-11"><a href="#Commands-you-may-need-to-solve-this-level-11" class="headerlink" title="Commands you may need to solve this level"></a>Commands you may need to solve this level</h3><p>grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd</p>
+<h2 id="Bandit-Level-12-→-Level-13"><a href="#Bandit-Level-12-→-Level-13" class="headerlink" title="Bandit Level 12 → Level 13"></a>Bandit Level 12 → Level 13</h2><h3 id="Level-Goal-12"><a href="#Level-Goal-12" class="headerlink" title="Level Goal"></a>Level Goal</h3><p>The password for the next level is stored in the file data.txt, which is a hexdump of a file that has been repeatedly compressed. For this level it may be useful to create a directory under &#x2F;tmp in which you can work using mkdir. For example: mkdir &#x2F;tmp&#x2F;myname123. Then copy the datafile using cp, and rename it using mv (read the manpages!)</p>
+<h3 id="Commands-you-may-need-to-solve-this-level-12"><a href="#Commands-you-may-need-to-solve-this-level-12" class="headerlink" title="Commands you may need to solve this level"></a>Commands you may need to solve this level</h3><p>grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd, mkdir, cp, mv, file</p>
+
+            
+        </div>
+        <div class="page-template-comments">
+            
+        </div>
+    </div>
+</div>
+
+
+                
+
+            </div>
+
+
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Ben Chen</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a></span>
+                <br>
+            <span class="theme-version-container">THEME&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.0.3</a>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+</main>
+
+
+
+<script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/utils.js"></script><script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/main.js"></script><script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/layouts/navbarShrink.js"></script><script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/tools/scrollTopBottom.js"></script><script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/tools/lightDarkSwitch.js"></script>
+
+
+    <script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/tools/localSearch.js"></script>
+
+
+
+    <script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/tools/codeBlock.js"></script>
+
+
+
+    <script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/layouts/lazyload.js"></script>
+
+
+
+
+
+  <script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/libs/Typed.min.js"></script>
+  <script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/plugins/typed.js"></script>
+
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+</div>
+
+
+    <script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            Global.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            Global.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            Global.refresh();
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
