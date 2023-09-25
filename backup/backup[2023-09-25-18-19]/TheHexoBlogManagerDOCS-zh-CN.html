@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    <meta name="description" content="Hexo Theme Redefine">
+    <meta name="author" content="Ben Chen">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-redefine.png">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://evan.beee.top" crossorigin>
+    
+        
+            <link rel="preconnect" href="https://unpkg.com" crossorigin>
+        
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/backup/backup[2023-09-25-18-19]/thehexoblogmanagerdocs-zh-cn.html"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+        <meta name="description" content="介绍一下Hexo Blog Manager，这是一个用户友好的软件，旨在简化和优化管理Hexo博客的过程。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo Blog Manager">
+<meta property="og:url" content="http://example.com/backup/backup[2023-09-25-18-19]/TheHexoBlogManagerDOCS-zh-CN.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="介绍一下Hexo Blog Manager，这是一个用户友好的软件，旨在简化和优化管理Hexo博客的过程。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/1.webp">
+<meta property="og:image" content="http://example.com/8.webp">
+<meta property="og:image" content="http://example.com/2.webp">
+<meta property="og:image" content="http://example.com/3.webp">
+<meta property="og:image" content="http://example.com/4.webp">
+<meta property="og:image" content="http://example.com/6.webp">
+<meta property="og:image" content="http://example.com/5.webp">
+<meta property="og:image" content="http://example.com/7.webp">
+<meta property="article:published_time" content="2023-04-09T05:26:12.000Z">
+<meta property="article:modified_time" content="2023-09-25T10:19:22.191Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="Personal works">
+<meta property="article:tag" content="DOCS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/1.webp">
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/icon.ico" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icon.ico">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/icon.ico">
+    <!--- Page Info-->
+    
+    <title>
+        
+            Hexo Blog Manager -
+        
+        Ben
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/hexo-theme-redefine@2.0.3/source/assets/fonts.css">
+    <!--- Font Part-->
+    
+    
+    
+    
+
+    <!--- Inject Part-->
+    
+    <script id="hexo-configurations">
+    let Global = window.Global || {};
+    Global.hexo_config = {"hostname":"example.com","root":"/","language":"en"};
+    Global.theme_config = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center"},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":false,"auto":false,"list":[""]},"code_block":{"copy":true,"style":"mac","font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":false,"lazyload":true,"recommendation":{"enable":false,"title":"recommendations","limit":3,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"busuanzi_counter":{"enable":false,"site_pv":false,"site_uv":false,"post_pv":false},"pjax":true,"open_graph":true},"home_banner":{"enable":true,"image":{"light":"/images/wallhaven-wqery6-light.webp","dark":"/images/wallhaven-wqery6-dark.webp"},"title":"Exploration inspires possibilities","subtitle":{"text":[],"typing_speed":100,"backing_speed":80,"starting_delay":500,"backing_delay":1500,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":false,"family":null,"url":null},"social_links":{"enable":"ture","links":{"github":"https://github.com/BenChenEternity","instagram":null,"zhihu":null,"twitter":null,"email":"eternitybenthegreat@gamil.com"}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"audios":[{"name":null,"artist":null,"url":null,"cover":null},{"name":null,"artist":null,"url":null,"cover":null}]},"mermaid":{"enable":false,"version":"9.3.0"}},"version":"2.0.3","navbar":{"auto_hide":false,"color":{"left":"#f78736","right":"#367df7","transparency":35},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"Archives":{"path":"/archives","icon":"fa-regular fa-archive"},"About":{"path":"/about","icon":"fa-regular fa-user"},"Category":{"path":"/category","icon":"fa-regular fa-books"},"Chat-GPT":{"path":"/chat-gpt","icon":"fa-solid fa-microchip-ai"},"Links":{"icon":"fa-regular fa-link","submenus":{"My deprecated blogs":"https://nicolasdavout.github.io","Friends":"/links"}}},"search":{"enable":true,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"article_date_format":"auto","categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}}};
+    Global.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    <link rel="stylesheet" href="https://unpkg.com/hexo-theme-redefine@2.0.3/source/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/hexo-theme-redefine@2.0.3/source/fontawesome/brands.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/hexo-theme-redefine@2.0.3/source/fontawesome/solid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/hexo-theme-redefine@2.0.3/source/fontawesome/regular.min.css">
+    
+    
+    
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="main-content-container">
+
+        <div class="main-content-header">
+            <header class="navbar-container">
+    
+    <div class="navbar-content">
+        <div class="left">
+            
+                <a class="logo-image" href="/">
+                    <img src="/images/icon.ico">
+                </a>
+            
+            <a class="logo-title" href="/">
+                
+                Ben
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-house"></i>
+                                        
+                                        HOME
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/archives"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-archive"></i>
+                                        
+                                        ARCHIVES
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/about"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-user"></i>
+                                        
+                                        ABOUT
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/category"  >
+                                    
+                                        
+                                            <i class="fa-regular fa-books"></i>
+                                        
+                                        CATEGORY
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="" 
+                                    href="/chat-gpt"  >
+                                    
+                                        
+                                            <i class="fa-solid fa-microchip-ai"></i>
+                                        
+                                        CHAT-GPT
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class="has-dropdown" 
+                                    href="#" onClick="return false;">
+                                    
+                                        
+                                            <i class="fa-regular fa-link"></i>
+                                        
+                                        LINKS&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                                    
+                                </a>
+                                <!-- Submenu -->
+                                
+                                    <ul class="sub-menu">
+                                    
+                                        <li>
+                                        <a target="_blank" rel="noopener" href="https://nicolasdavout.github.io">MY DEPRECATED BLOGS
+                                        </a>
+                                        </li>
+                                    
+                                        <li>
+                                        <a href="/links">FRIENDS
+                                        </a>
+                                        </li>
+                                    
+                                    </ul>
+                                
+                            </li>
+                    
+                    
+                        <li class="navbar-item search search-popup-trigger">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fa-solid fa-magnifying-glass"></i></div>
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="navbar-drawer">
+        <ul class="drawer-navbar-list">
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/"  >
+                             
+                                
+                                    <i class="fa-regular fa-house"></i>
+                                
+                                HOME
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/archives"  >
+                             
+                                
+                                    <i class="fa-regular fa-archive"></i>
+                                
+                                ARCHIVES
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/about"  >
+                             
+                                
+                                    <i class="fa-regular fa-user"></i>
+                                
+                                ABOUT
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/category"  >
+                             
+                                
+                                    <i class="fa-regular fa-books"></i>
+                                
+                                CATEGORY
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="" 
+                        href="/chat-gpt"  >
+                             
+                                
+                                    <i class="fa-solid fa-microchip-ai"></i>
+                                
+                                CHAT-GPT
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                    
+            
+                
+                    <li class="drawer-navbar-item flex-center">
+                        <a class="has-dropdown" 
+                        href="#" onClick="return false;">
+                            
+                                
+                                    <i class="fa-regular fa-link"></i>
+                                
+                                LINKS&nbsp;<i class="fa-solid fa-chevron-down"></i>
+                            
+                        </a>
+                    </li>
+                    <!-- Submenu -->
+                              
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" target="_blank" rel="noopener" href="https://nicolasdavout.github.io">MY DEPRECATED BLOGS</a>
+                            </li>
+                        
+                            <li class="dropdown-item flex-center">
+                                <a class="dropdown-item" href="/links">FRIENDS</a>
+                            </li>
+                        
+                    
+            
+
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="main-content-body">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="page-template-container">
+        
+        
+        <div class="page-template-content markdown-body">
+            
+                <p><a class="link" target="_blank" rel="noopener" href="https://ajie.wiki/2023/04/09/TheHexoBlogManagerDOCS-en-US/">英语 English <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>本文档帮助你更快上手 Hexo Blog Manager</p>
+<h2 id="实现的功能"><a href="#实现的功能" class="headerlink" title="实现的功能"></a>实现的功能</h2><ul>
+<li><p>markdown文件管理</p>
+<ul>
+<li>显示markdown文件的名字，优先级</li>
+<li>自由查看和修改markdown文件的详细头部信息</li>
+<li>快捷新建markdown文件（及其对应的文件夹）</li>
+<li>删除markdown文件（及其对应的文件夹）</li>
+</ul>
+</li>
+<li><p>博客生成与部署</p>
+</li>
+<li><p>自动备份</p>
+</li>
+</ul>
+<blockquote>
+<p>更多功能待开发</p>
+</blockquote>
+<h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><h3 id="运行-Hexo-Blog-Manager"><a href="#运行-Hexo-Blog-Manager" class="headerlink" title="运行 Hexo Blog Manager"></a>运行 Hexo Blog Manager</h3><ul>
+<li>对于HexoBlogManager.jar</li>
+</ul>
+<blockquote>
+<p>要运行一个 .jar 文件，需要先安装 Java 运行时环境（JRE）。如果您没有安装 JRE，请从 Oracle 官方网站下载并安装。然后，按照以下步骤运行 Hexo Blog Manager.jar 文件：</p>
+</blockquote>
+<p><strong>您可以直接双击jar文件打开。</strong></p>
+<p>或者</p>
+<ol>
+<li>在终端中打开包含 HexoBlogManager.jar 文件的目录。</li>
+<li>在命令行或终端窗口中输入以下命令：<code>java -jar HexoBlogManager.jar</code></li>
+<li>按下回车键即可启动应用程序。</li>
+</ol>
+<ul>
+<li>对于Hexo Blog Manager.exe</li>
+</ul>
+<p><strong>要运行 .exe 文件，只需双击该文件即可启动应用程序。</strong></p>
+<h3 id="使用条件"><a href="#使用条件" class="headerlink" title="使用条件"></a>使用条件</h3><p>因为面向大部分用户，所以操作系统为 Windows，不支持Linux和MAC</p>
+<p>在使用前，您应该确保您的hexo能够成功执行<code>hexo clean</code> <code>hexo g</code> <code>hexo d</code>，否则可能会因为某些原因导致应用程序阻塞发生意外的错误。</p>
+<h3 id="用户界面介绍"><a href="#用户界面介绍" class="headerlink" title="用户界面介绍"></a>用户界面介绍</h3><p>该应用程序具有以下六个按钮：</p>
+<p><img lazyload src="/images/loading.svg" data-src="/1.webp" alt="PIC1"></p>
+<p>从上到下，从左到右依次是：</p>
+<ul>
+<li>Markdown文件管理：管理Markdown文件。您可以创建、编辑、重命名和删除Markdown文件。</li>
+<li>Blog生成与部署：清除，</li>
+<li>设置：通过此按钮，您可以更改博客路径。</li>
+<li>打开blog文章目录：通过此按钮，您可以快速找到所有文章。</li>
+<li>关于作者：查看应用程序的作者信息。</li>
+<li>帮助文档：查看应用程序的帮助文档。</li>
+</ul>
+<p>下面开始详细介绍各个部分</p>
+<h3 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h3><p>设置总共有两个：</p>
+<ul>
+<li>博客根目录</li>
+<li>cwebp目录</li>
+</ul>
+<p><img lazyload src="/images/loading.svg" data-src="/8.webp" alt="PIC8"></p>
+<p>第一个输入框填写您的hexo博客的根目录</p>
+<p>第二个输入框填写您的cwebp的根目录。</p>
+<h4 id="什么是cwebp？"><a href="#什么是cwebp？" class="headerlink" title="什么是cwebp？"></a>什么是cwebp？</h4><p>cwebp是一个可将图片文件压缩为 WebP 文件的工具</p>
+<p><a class="link" target="_blank" rel="noopener" href="https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.3.0-windows-x64.zip">单机此处可下载 WebP for windows <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<p>这是介绍文档（无需了解，可以略过）</p>
+<p><a class="link" target="_blank" rel="noopener" href="https://developers.google.com/speed/webp/docs/cwebp">https://developers.google.com/speed/webp/docs/cwebp <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></p>
+<h4 id="为什么需要cwebp？"><a href="#为什么需要cwebp？" class="headerlink" title="为什么需要cwebp？"></a>为什么需要cwebp？</h4><p>压缩为 WebP 文件可以极大程度压缩图片，节省流量等等成本，提升用户访问速度，给用户提升观感。</p>
+<h3 id="Markdown文件管理"><a href="#Markdown文件管理" class="headerlink" title="Markdown文件管理"></a>Markdown文件管理</h3><p>要管理Markdown文件，请单击“Markdown文件管理”按钮。在此页面中：</p>
+<h4 id="文章管理面板"><a href="#文章管理面板" class="headerlink" title="文章管理面板"></a>文章管理面板</h4><p>显示文章的文件名字，以及优先级(sticky)，此处显示的优先级和实际部署的几乎一样。显示的格式为<code>文章 (优先级)</code>，如果部分支持<code>top: true</code>的主题中的文章有top项目，那么top将会被排序在最前面。剩下不包含<code>top: true</code>的文章将根据优先级<code>sticky: num</code>从大到小排列，即按照sticky由大到小排序。如果部分文章没有<code>sticky: num</code>，那么这些文章将排序在最后。</p>
+<blockquote>
+<p>在下面这个例子中，example.md具有<code>top: true</code>属性，所以优先级最高，HelloWorld.md具有<code>sticky: 999</code>属性，值远大于其余的sticky值分别为（6，5，4，3，2，1，null），所以优先级高于sticky值较小或者没有的.md文件，example2.md没有<code>sticky: num</code>属性，所以优先级在最后。</p>
+</blockquote>
+<p><img lazyload src="/images/loading.svg" data-src="/2.webp" alt="PIC2"></p>
+<h4 id="文章新建面板"><a href="#文章新建面板" class="headerlink" title="文章新建面板"></a>文章新建面板</h4><p>单击“New Article”按钮以调出新建面板</p>
+<p><img lazyload src="/images/loading.svg" data-src="/3.webp" alt="PIC3"></p>
+<ul>
+<li><code>Title</code>:文章的标题，为必填项</li>
+<li><code>Category</code>:选择文章的类型，这里一个文章只能选择一个种类。以后可能会改成可选择多个种类，（但是这样似乎与tag没有差别）。</li>
+<li><code>Tags</code>:选择文章的标签。按住ctrl单击鼠标左键以实现选择多项<blockquote>
+<p>注意：某些主题有最多支持标签数量，如果超出了这个数量，那么不同主题会有不同的处理方式。</p>
+</blockquote>
+</li>
+<li><code>Priority</code>:即sticky，定义文章的优先级。如果将右边Enable勾选，则开启，否则不使用该标签。</li>
+<li><code>Abstract</code>:即excerpt，定义文章的摘要。如果将右边Enable勾选，则开启，否则不使用该标签。</li>
+<li><code>Thumbnail</code>:选择文章的略缩图。如果将右边Enable勾选，则开启，否则不使用该标签。</li>
+<li><code>Cover</code>:选择文章的封面。如果将右边Enable勾选，则开启，否则不使用该标签。</li>
+</ul>
+<blockquote>
+<p>值得注意的是，这里采用的是写入绝对路径的方法。比如</p>
+</blockquote>
+<p><img lazyload src="/images/loading.svg" data-src="/4.webp" alt="PIC4"></p>
+<blockquote>
+<p>如果您安装了某些插件更改了生成静态网页后的路径，比如abbrlink等等，那么此功能将不可使用，请在后面的属性修改面板中手动配置。</p>
+</blockquote>
+<p>单机submit按钮以新建您的文章。</p>
+<p>在新建完成之后，会弹出提示框，您可以单机其中的按钮快速访问您新建的文件。</p>
+<p><strong>管理您的标签</strong></p>
+<p>单机新建面板中的<code>Categories &amp; tags management</code>按钮以管理您的种类和标签。在上方输入框输入后单击<code>+</code>即可添加，选中一个项目单击<code>-</code>即可删除。</p>
+<p><img lazyload src="/images/loading.svg" data-src="/6.webp" alt="PIC6"></p>
+<h4 id="文章删除"><a href="#文章删除" class="headerlink" title="文章删除"></a>文章删除</h4><p>选中文章，然后单击删除“Delete Article”按钮以删除文章及其对应的文件夹。如果选中多个，那么会删除首个。为确保安全性，选中文章后单机删除会弹出提示框提示是否确认删除。</p>
+<blockquote>
+<p>如果您误删了文件不用担心，在每次打开Hexo Blog Manager时都会自动为您备份<code>_posts</code>文件夹下的所有文件至与之同一目录下的<code>backup</code>文件夹</p>
+</blockquote>
+<h4 id="刷新按钮"><a href="#刷新按钮" class="headerlink" title="刷新按钮"></a>刷新按钮</h4><p>如果您手动使用编辑器修改了文件的属性值，那么单机刷新按钮即可重新读取内容。</p>
+<h4 id="属性查看与修改面板"><a href="#属性查看与修改面板" class="headerlink" title="属性查看与修改面板"></a>属性查看与修改面板</h4><p>选中一篇文章，单击<code>Details</code>按钮，即可访问该文件的属性值。</p>
+<p><img lazyload src="/images/loading.svg" data-src="/5.webp" alt="PIC5"></p>
+<p>您可以自由给.md文件的头部添加<code>Add new</code>和删除键值对<code>Remove</code>。但是，键必须是以下中的一个</p>
+<ul>
+<li>title</li>
+<li>date</li>
+<li>updated</li>
+<li>categories</li>
+<li>tags</li>
+<li>sticky</li>
+<li>keywords</li>
+<li>description</li>
+<li>thumbnail</li>
+<li>cover</li>
+<li>top</li>
+<li>comments</li>
+<li>excerpt</li>
+<li>toc</li>
+<li>mathjax</li>
+</ul>
+<p>否则将不会添加键值对成功</p>
+<p>属性查看与修改面板在读取键值对时，也是按照键的这个顺序排列的。</p>
+<p>在您完成修改之后，单机<code>Submit Changes</code>将这些修改应用到文件中。</p>
+<h3 id="Blog生成与部署"><a href="#Blog生成与部署" class="headerlink" title="Blog生成与部署"></a>Blog生成与部署</h3><p>要生成和部署博客，请单击“Blog生成与部署”按钮。在此页面中，您可以执行以下操作：</p>
+<ul>
+<li>清除内容，即<code>hexo clean</code></li>
+<li>生成并本地打开服务器 <a class="link" target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/ <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> ，即<code>hexo g &amp;&amp; hexo s</code></li>
+<li>生成并部署到GitHub，即<code>hexo g &amp;&amp; hexo d</code></li>
+</ul>
+<p><img lazyload src="/images/loading.svg" data-src="/7.webp" alt="PIC7"></p>
+<blockquote>
+<p>在您本地打开服务器后，最好不要通过任务管理器来强制结束进程，否则可能导致占用4000端口的后台进程无法释放。在单击<code>Generate and open on localhost</code>之后，Hexo Blog Manager会强制结束当前占用4000端口的进程（如果有）。</p>
+</blockquote>
+<h3 id="打开blog文件目录"><a href="#打开blog文件目录" class="headerlink" title="打开blog文件目录"></a>打开blog文件目录</h3><p>单击“文件夹”图标按钮，即可快速访问您的博客的.md文件。</p>
+<h3 id="关于作者"><a href="#关于作者" class="headerlink" title="关于作者"></a>关于作者</h3><p>要查看应用程序的作者信息，请单击“关于作者”按钮，可以向我的邮箱反馈bug，也可以访问我的GitHub页面。</p>
+<h3 id="帮助文档"><a href="#帮助文档" class="headerlink" title="帮助文档"></a>帮助文档</h3><p>要查看应用程序的帮助文档，请单击带有“帮助文档”图标的按钮。</p>
+
+            
+        </div>
+        <div class="page-template-comments">
+            
+        </div>
+    </div>
+</div>
+
+
+                
+
+            </div>
+
+
+
+        </div>
+
+        <div class="main-content-footer">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2023&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">Ben Chen</a>
+        </div>
+        
+        <div class="theme-info info-item">
+            <span class="powered-by-container">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" href="https://hexo.io">Hexo</a></span>
+                <br>
+            <span class="theme-version-container">THEME&nbsp;<a class="theme-version" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.0.3</a>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+    </div>  
+</footer>
+        </div>
+    </div>
+
+    
+
+    <div class="right-side-tools-container">
+        <div class="side-tools-container">
+    <ul class="hidden-tools-list">
+        <li class="right-bottom-tools tool-font-adjust-plus flex-center">
+            <i class="fa-regular fa-magnifying-glass-plus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-font-adjust-minus flex-center">
+            <i class="fa-regular fa-magnifying-glass-minus"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-expand-width flex-center">
+            <i class="fa-regular fa-expand"></i>
+        </li>
+
+        <li class="right-bottom-tools tool-dark-light-toggle flex-center">
+            <i class="fa-regular fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="right-bottom-tools tool-scroll-to-bottom flex-center">
+            <i class="fa-regular fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="visible-tools-list">
+        <li class="right-bottom-tools toggle-tools-list flex-center">
+            <i class="fa-regular fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="right-bottom-tools tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fa-solid fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fa-solid fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+</main>
+
+
+
+<script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/utils.js"></script><script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/main.js"></script><script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/layouts/navbarShrink.js"></script><script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/tools/scrollTopBottom.js"></script><script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/tools/lightDarkSwitch.js"></script>
+
+
+    <script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/tools/localSearch.js"></script>
+
+
+
+    <script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/tools/codeBlock.js"></script>
+
+
+
+    <script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/layouts/lazyload.js"></script>
+
+
+
+
+
+  <script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/libs/Typed.min.js"></script>
+  <script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/plugins/typed.js"></script>
+
+
+
+
+
+
+<div class="post-scripts pjax">
+    
+</div>
+
+
+    <script src="https://unpkg.com/hexo-theme-redefine@2.0.3/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            Global.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            Global.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            Global.refresh();
+        });
+    });
+</script>
+
+
+
+
+</body>
+</html>
