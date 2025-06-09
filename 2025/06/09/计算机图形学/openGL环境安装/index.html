@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+
+	<!-- title -->
+	
+		<title>
+			
+				openGL环境安装 |
+					
+						Note
+		</title>
+
+		<!-- keywords,description -->
+		
+					
+
+								<!-- favicon -->
+								
+									<link rel="shortcut icon" href="/favicon.ico">
+										
+
+
+											<!-- search -->
+											<script>
+												var searchEngine = "";
+												if (typeof searchEngine == "undefined" || searchEngine == null || searchEngine == "")
+												{
+													searchEngine = "https://www.google.com/search?q=";
+												}
+												var homeHost = "BenChenEternity.github.io";
+												if (typeof homeHost == "undefined" || homeHost == null || homeHost == "")
+												{
+													homeHost = window.location.host;
+												}
+											</script>
+
+
+											
+<link rel="stylesheet" href="/css/main.css">
+
+												
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+													
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+														
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+															
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+
+																
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+																	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+																		
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+																			
+<script src="/js/main.js"></script>
+
+
+																				
+																					
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+																						
+<script src="https://cdn.jsdelivr.net/npm/valine@v1.5.1/dist/Valine.min.js"></script>
+
+																							
+																								
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">Note</a>
+
+	<ul id="menu">
+    
+      <li class="menu-item">
+        <a href="/about" class="menu-item-link">About</a>
+      </li>
+    
+
+    
+
+    
+
+    
+  
+    
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="Press Enter to search">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										hexo
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/06/09/hexo/%E9%85%8D%E7%BD%AE/">
+                     
+										    初始化配置
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										计算机图形学
+									</a>
+									
+							<ul>
+								<li class="file active">
+									<a href="/2025/06/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/openGL%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/">
+                     
+										    openGL环境安装
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/06/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E7%A9%BA%E9%97%B4%E5%8F%98%E6%8D%A2/">
+                     
+										    空间变换
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content" class="content">
+		<h1 id="article-title">
+	openGL环境安装
+</h1>
+
+<!-- meta -->
+<div class="article-meta">
+	
+
+	<span>NicolasDavout</span>
+	<span>2025-06-09 10:38:23</span>
+
+  <div id="article-categories">
+    
+		  <span>Categories：</span>
+      
+    
+
+    
+		    <span>Tags：</span>
+        
+    
+  </div>
+
+</div>
+
+<!-- content -->
+<div id="article-content">
+	<h2 id="windows">windows</h2>
+<h3 id="创建库目录">创建库目录</h3>
+<p>根目录下创建文件夹 libs，创建两个子文件夹 lib 和 include</p>
+<pre><code class="hljs plaintext">libs
+├─include
+└─lib</code></pre>
+<h3 id="安装-glfw">安装 glfw</h3>
+<p>去官网下载最新版 <code>64-bit Windows binaries</code></p>
+<p>https://www.glfw.org/download.html</p>
+<p>打开下载的包</p>
+<ul>
+<li>把里面 <code>include</code> 下整个 <code>GLFW</code> 文件夹放进
+<code>libs/include</code></li>
+</ul>
+<p>选择对应编译器下的文件夹，一般是 <code>lib-mingw-w64</code>
+，把里面的 ：</p>
+<ul>
+<li><code>.a</code> 文件放进 <code>libs/lib</code></li>
+<li><code>.dll</code> 文件放进 <code>cmake-build-debug</code></li>
+</ul>
+<h3 id="安装-glew">安装 glew</h3>
+<p>去官网下载最新版 <code>Windows 32-bit and 64-bit</code></p>
+<p>https://glew.sourceforge.net/index.html</p>
+<p>打开下载的包</p>
+<ul>
+<li><p>把里面 <code>include</code> 下整个 <code>GL</code> 文件夹放进
+<code>libs/include</code></p></li>
+<li><p>把 <code>lib\Release\x64</code> 下的 <code>.lib</code> 文件放入
+<code>libs/lib</code></p></li>
+<li><p>把 <code>bin\Release\x64</code> 下的 <code>.dll</code> 文件放入
+<code>cmake-build-debug</code></p></li>
+</ul>
+<p>最终结果应该如下</p>
+<pre><code class="hljs plaintext">libs
+├─include
+│  ├─GL
+│  │      eglew.h
+│  │      glew.h
+│  │      glxew.h
+│  │      wglew.h
+│  │
+│  ├─GLFW
+│  │      glfw3.h (GLFW)
+│  │      glfw3native.h (GLFW)
+│  │
+│  └─glm
+│     └─ ...
+└─lib
+        glew32.lib
+        glew32s.lib
+        libglfw3.a (GLFW)
+        libglfw3dll.a (GLFW)</code></pre>
+<h3 id="测试">测试</h3>
+<p>配置 <code>CMakeLists.txt</code> 示例如下，注意修改项目名称</p>
+<pre><code class="hljs plaintext"># CMake 最低版本要求 (使用你原来的版本)
+cmake_minimum_required(VERSION 3.30)
+
+# 项目名称为 &quot;Graphics&quot;
+project(Graphics)
+
+# 设置 C++ 标准为 C++20 (使用你原来的设置)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# --- 核心配置：指定本地库的路径 ---
+# 告诉 CMake 去我们项目下的 libs/include 文件夹寻找头文件
+include_directories($&#123;CMAKE_SOURCE_DIR&#125;/libs/include)
+
+# 告诉 CMake 去我们项目下的 libs/lib 文件夹寻找库文件
+link_directories($&#123;CMAKE_SOURCE_DIR&#125;/libs/lib)
+
+
+# --- 创建可执行文件 ---
+# 使用你的项目名 &quot;Graphics&quot; 作为可执行文件名
+add_executable(Graphics main.cpp)
+
+
+# --- 链接所有需要的库 ---
+# 将 &quot;Graphics&quot; 可执行文件与所有必需的库链接起来
+target_link_libraries(Graphics PRIVATE
+        # 链接 OpenGL (Windows 系统库)
+        opengl32
+
+        # 链接 GLEW (来自 libs/lib 目录)
+        glew32
+
+        # 链接 GLFW (动态链接版, 来自 libs/lib 目录)
+        glfw3dll
+
+        # 链接 GDI (Windows 图形库, 以防万一)
+        gdi32
+)</code></pre>
+<p>在 <code>main.cpp</code> 写一段测试代码</p>
+<pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;GL/glew.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;GLFW/glfw3.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;vector&gt;</span></span>
+
+<span class="hljs-comment">// --- GLSL 着色器代码 ---</span>
+
+<span class="hljs-comment">// 顶点着色器 (Vertex Shader)</span>
+<span class="hljs-comment">// 负责处理每个顶点，决定其在屏幕上的最终位置。</span>
+<span class="hljs-comment">// `aPos` 是输入的顶点位置，`aColor` 是输入的顶点颜色。</span>
+<span class="hljs-comment">// `vColor` 是输出到片段着色器的颜色。</span>
+<span class="hljs-type">const</span> <span class="hljs-type">char</span>* vertexShaderSource = <span class="hljs-string">R&quot;(</span>
+<span class="hljs-string">    #version 330 core</span>
+<span class="hljs-string">    layout (location = 0) in vec3 aPos;</span>
+<span class="hljs-string">    layout (location = 1) in vec3 aColor;</span>
+<span class="hljs-string">    out vec3 vColor;</span>
+<span class="hljs-string">    void main() &#123;</span>
+<span class="hljs-string">        gl_Position = vec4(aPos, 1.0);</span>
+<span class="hljs-string">        vColor = aColor;</span>
+<span class="hljs-string">    &#125;</span>
+<span class="hljs-string">)&quot;</span>;
+
+<span class="hljs-comment">// 片段着色器 (Fragment Shader)</span>
+<span class="hljs-comment">// 负责计算每个像素的最终颜色。</span>
+<span class="hljs-comment">// `vColor` 是从顶点着色器接收的、经过插值的颜色。</span>
+<span class="hljs-type">const</span> <span class="hljs-type">char</span>* fragmentShaderSource = <span class="hljs-string">R&quot;(</span>
+<span class="hljs-string">    #version 330 core</span>
+<span class="hljs-string">    in vec3 vColor;</span>
+<span class="hljs-string">    out vec4 FragColor;</span>
+<span class="hljs-string">    void main() &#123;</span>
+<span class="hljs-string">        FragColor = vec4(vColor, 1.0);</span>
+<span class="hljs-string">    &#125;</span>
+<span class="hljs-string">)&quot;</span>;
+
+
+<span class="hljs-comment">// --- 主函数 ---</span>
+
+<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;
+    <span class="hljs-comment">// 1. 初始化 GLFW</span>
+    <span class="hljs-keyword">if</span> (!<span class="hljs-built_in">glfwInit</span>()) &#123;
+        std::cerr &lt;&lt; <span class="hljs-string">&quot;Failed to initialize GLFW&quot;</span> &lt;&lt; std::endl;
+        <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+    &#125;
+    <span class="hljs-built_in">glfwWindowHint</span>(GLFW_CONTEXT_VERSION_MAJOR, <span class="hljs-number">3</span>);
+    <span class="hljs-built_in">glfwWindowHint</span>(GLFW_CONTEXT_VERSION_MINOR, <span class="hljs-number">3</span>);
+    <span class="hljs-built_in">glfwWindowHint</span>(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
+    <span class="hljs-comment">// 2. 创建窗口</span>
+    GLFWwindow* window = <span class="hljs-built_in">glfwCreateWindow</span>(<span class="hljs-number">800</span>, <span class="hljs-number">600</span>, <span class="hljs-string">&quot;OpenGL Triangle Test&quot;</span>, <span class="hljs-literal">NULL</span>, <span class="hljs-literal">NULL</span>);
+    <span class="hljs-keyword">if</span> (!window) &#123;
+        std::cerr &lt;&lt; <span class="hljs-string">&quot;Failed to create GLFW window&quot;</span> &lt;&lt; std::endl;
+        <span class="hljs-built_in">glfwTerminate</span>();
+        <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+    &#125;
+    <span class="hljs-built_in">glfwMakeContextCurrent</span>(window);
+
+    <span class="hljs-comment">// 3. 初始化 GLEW</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">glewInit</span>() != GLEW_OK) &#123;
+        std::cerr &lt;&lt; <span class="hljs-string">&quot;Failed to initialize GLEW&quot;</span> &lt;&lt; std::endl;
+        <span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+    &#125;
+
+    <span class="hljs-comment">// --- 编译着色器 ---</span>
+
+    <span class="hljs-comment">// 创建、编译顶点着色器</span>
+    GLuint vertexShader = <span class="hljs-built_in">glCreateShader</span>(GL_VERTEX_SHADER);
+    <span class="hljs-built_in">glShaderSource</span>(vertexShader, <span class="hljs-number">1</span>, &amp;vertexShaderSource, <span class="hljs-literal">NULL</span>);
+    <span class="hljs-built_in">glCompileShader</span>(vertexShader);
+    <span class="hljs-comment">// (可以添加错误检查)</span>
+
+    <span class="hljs-comment">// 创建、编译片段着色器</span>
+    GLuint fragmentShader = <span class="hljs-built_in">glCreateShader</span>(GL_FRAGMENT_SHADER);
+    <span class="hljs-built_in">glShaderSource</span>(fragmentShader, <span class="hljs-number">1</span>, &amp;fragmentShaderSource, <span class="hljs-literal">NULL</span>);
+    <span class="hljs-built_in">glCompileShader</span>(fragmentShader);
+    <span class="hljs-comment">// (可以添加错误检查)</span>
+
+    <span class="hljs-comment">// 创建着色器程序并链接</span>
+    GLuint shaderProgram = <span class="hljs-built_in">glCreateProgram</span>();
+    <span class="hljs-built_in">glAttachShader</span>(shaderProgram, vertexShader);
+    <span class="hljs-built_in">glAttachShader</span>(shaderProgram, fragmentShader);
+    <span class="hljs-built_in">glLinkProgram</span>(shaderProgram);
+    <span class="hljs-comment">// (可以添加错误检查)</span>
+
+    <span class="hljs-comment">// 链接后删除着色器对象，它们已不再需要</span>
+    <span class="hljs-built_in">glDeleteShader</span>(vertexShader);
+    <span class="hljs-built_in">glDeleteShader</span>(fragmentShader);
+
+
+    <span class="hljs-comment">// --- 准备顶点数据 ---</span>
+
+    <span class="hljs-comment">// 定义三角形的三个顶点，每个顶点有 位置(x,y,z) 和 颜色(r,g,b)</span>
+    <span class="hljs-type">float</span> vertices[] = &#123;
+        <span class="hljs-comment">// 位置              // 颜色</span>
+        <span class="hljs-number">-0.5f</span>, <span class="hljs-number">-0.5f</span>, <span class="hljs-number">0.0f</span>,  <span class="hljs-number">1.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>,  <span class="hljs-comment">// 左下角, 红色</span>
+         <span class="hljs-number">0.5f</span>, <span class="hljs-number">-0.5f</span>, <span class="hljs-number">0.0f</span>,  <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span>, <span class="hljs-number">0.0f</span>,  <span class="hljs-comment">// 右下角, 绿色</span>
+         <span class="hljs-number">0.0f</span>,  <span class="hljs-number">0.5f</span>, <span class="hljs-number">0.0f</span>,  <span class="hljs-number">0.0f</span>, <span class="hljs-number">0.0f</span>, <span class="hljs-number">1.0f</span>   <span class="hljs-comment">// 上中点, 蓝色</span>
+    &#125;;
+
+    <span class="hljs-comment">// 创建顶点数组对象 (VAO) 和 顶点缓冲对象 (VBO)</span>
+    GLuint VAO, VBO;
+    <span class="hljs-built_in">glGenVertexArrays</span>(<span class="hljs-number">1</span>, &amp;VAO);
+    <span class="hljs-built_in">glGenBuffers</span>(<span class="hljs-number">1</span>, &amp;VBO);
+
+    <span class="hljs-comment">// 1. 绑定 VAO</span>
+    <span class="hljs-built_in">glBindVertexArray</span>(VAO);
+
+    <span class="hljs-comment">// 2. 绑定 VBO 并将顶点数据复制到缓冲中</span>
+    <span class="hljs-built_in">glBindBuffer</span>(GL_ARRAY_BUFFER, VBO);
+    <span class="hljs-built_in">glBufferData</span>(GL_ARRAY_BUFFER, <span class="hljs-built_in">sizeof</span>(vertices), vertices, GL_STATIC_DRAW);
+
+    <span class="hljs-comment">// 3. 设置顶点属性指针，告诉 OpenGL 如何解释顶点数据</span>
+    <span class="hljs-comment">// 位置属性 (location = 0)</span>
+    <span class="hljs-built_in">glVertexAttribPointer</span>(<span class="hljs-number">0</span>, <span class="hljs-number">3</span>, GL_FLOAT, GL_FALSE, <span class="hljs-number">6</span> * <span class="hljs-built_in">sizeof</span>(<span class="hljs-type">float</span>), (<span class="hljs-type">void</span>*)<span class="hljs-number">0</span>);
+    <span class="hljs-built_in">glEnableVertexAttribArray</span>(<span class="hljs-number">0</span>);
+    <span class="hljs-comment">// 颜色属性 (location = 1)</span>
+    <span class="hljs-built_in">glVertexAttribPointer</span>(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, GL_FLOAT, GL_FALSE, <span class="hljs-number">6</span> * <span class="hljs-built_in">sizeof</span>(<span class="hljs-type">float</span>), (<span class="hljs-type">void</span>*)(<span class="hljs-number">3</span> * <span class="hljs-built_in">sizeof</span>(<span class="hljs-type">float</span>)));
+    <span class="hljs-built_in">glEnableVertexAttribArray</span>(<span class="hljs-number">1</span>);
+
+    <span class="hljs-comment">// 4. 解绑 VBO 和 VAO</span>
+    <span class="hljs-built_in">glBindBuffer</span>(GL_ARRAY_BUFFER, <span class="hljs-number">0</span>);
+    <span class="hljs-built_in">glBindVertexArray</span>(<span class="hljs-number">0</span>);
+
+
+    <span class="hljs-comment">// --- 渲染循环 ---</span>
+    <span class="hljs-keyword">while</span> (!<span class="hljs-built_in">glfwWindowShouldClose</span>(window)) &#123;
+        <span class="hljs-comment">// 清除屏幕颜色</span>
+        <span class="hljs-built_in">glClearColor</span>(<span class="hljs-number">0.1f</span>, <span class="hljs-number">0.1f</span>, <span class="hljs-number">0.1f</span>, <span class="hljs-number">1.0f</span>); <span class="hljs-comment">// 深灰色背景</span>
+        <span class="hljs-built_in">glClear</span>(GL_COLOR_BUFFER_BIT);
+
+        <span class="hljs-comment">// 绘制三角形</span>
+        <span class="hljs-built_in">glUseProgram</span>(shaderProgram);      <span class="hljs-comment">// 激活着色器程序</span>
+        <span class="hljs-built_in">glBindVertexArray</span>(VAO);           <span class="hljs-comment">// 绑定 VAO</span>
+        <span class="hljs-built_in">glDrawArrays</span>(GL_TRIANGLES, <span class="hljs-number">0</span>, <span class="hljs-number">3</span>); <span class="hljs-comment">// 绘制三角形，共3个顶点</span>
+
+        <span class="hljs-comment">// 交换缓冲区并处理事件</span>
+        <span class="hljs-built_in">glfwSwapBuffers</span>(window);
+        <span class="hljs-built_in">glfwPollEvents</span>();
+    &#125;
+
+
+    <span class="hljs-comment">// --- 清理资源 ---</span>
+    <span class="hljs-built_in">glDeleteVertexArrays</span>(<span class="hljs-number">1</span>, &amp;VAO);
+    <span class="hljs-built_in">glDeleteBuffers</span>(<span class="hljs-number">1</span>, &amp;VBO);
+    <span class="hljs-built_in">glDeleteProgram</span>(shaderProgram);
+
+    <span class="hljs-built_in">glfwTerminate</span>();
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+&#125;</code></pre>
+<p>执行，应该能看到一个红绿蓝渐变三角形</p>
+
+</div>
+
+<!-- post-guide -->
+
+    <div class="post-guide">
+        <div class="item left">
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2025/06/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/%E5%9B%BE%E5%BD%A2%E5%AD%A6-%E7%A9%BA%E9%97%B4%E5%8F%98%E6%8D%A2/">
+                空间变换
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+<!-- comment - giscus -->
+
+
+<!-- comment - valine -->
+
+
+<script>
+	
+	
+</script>
+
+	</div>
+	<div id="footer">
+	<p>
+	©<span id="footerYear-start"></span>-<span id="footerYear-end"></span>
+
+	
+	    <a href="/">NicolasDavout</a>
+	
+	
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//wujun.me" target="_blank">Wu Jun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+
+
+<script type="text/javascript">
+	document.getElementById('footerYear-start').innerHTML = new Date().getFullYear() + '';
+</script>
+
+<script type="text/javascript">
+	document.getElementById('footerYear-end').innerHTML = new Date().getFullYear() + '';
+</script>
+
+    <script src='https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js'></script>
+    <script>
+      if (window.mermaid) {
+        mermaid.initialize({theme: 'forest'});
+      }
+    </script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
