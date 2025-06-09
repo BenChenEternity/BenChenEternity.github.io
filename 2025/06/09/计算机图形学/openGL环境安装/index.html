@@ -206,29 +206,30 @@
 └─lib</code></pre>
 <h3 id="安装-glfw">安装 glfw</h3>
 <p>去官网下载最新版 <code>64-bit Windows binaries</code></p>
-<p>https://www.glfw.org/download.html</p>
+<p><a target="_blank" rel="noopener" href="https://www.glfw.org/download.html">https://www.glfw.org/download.html</a></p>
 <p>打开下载的包</p>
 <ul>
-<li>把里面 <code>include</code> 下整个 <code>GLFW</code> 文件夹放进
-<code>libs/include</code></li>
+<li>把里面 <code>include</code> 下整个 <code>GLFW</code> 文件夹放进 <code>libs/include</code></li>
 </ul>
-<p>选择对应编译器下的文件夹，一般是 <code>lib-mingw-w64</code>
-，把里面的 ：</p>
+<p>选择对应编译器下的文件夹，一般是 <code>lib-mingw-w64</code> ，把里面的 ：</p>
 <ul>
 <li><code>.a</code> 文件放进 <code>libs/lib</code></li>
 <li><code>.dll</code> 文件放进 <code>cmake-build-debug</code></li>
 </ul>
 <h3 id="安装-glew">安装 glew</h3>
 <p>去官网下载最新版 <code>Windows 32-bit and 64-bit</code></p>
-<p>https://glew.sourceforge.net/index.html</p>
+<p><a target="_blank" rel="noopener" href="https://glew.sourceforge.net/index.html">https://glew.sourceforge.net/index.html</a></p>
 <p>打开下载的包</p>
 <ul>
-<li><p>把里面 <code>include</code> 下整个 <code>GL</code> 文件夹放进
-<code>libs/include</code></p></li>
-<li><p>把 <code>lib\Release\x64</code> 下的 <code>.lib</code> 文件放入
-<code>libs/lib</code></p></li>
-<li><p>把 <code>bin\Release\x64</code> 下的 <code>.dll</code> 文件放入
-<code>cmake-build-debug</code></p></li>
+<li>
+<p>把里面 <code>include</code> 下整个 <code>GL</code> 文件夹放进 <code>libs/include</code></p>
+</li>
+<li>
+<p>把 <code>lib\Release\x64</code> 下的 <code>.lib</code> 文件放入 <code>libs/lib</code></p>
+</li>
+<li>
+<p>把 <code>bin\Release\x64</code> 下的 <code>.dll</code> 文件放入 <code>cmake-build-debug</code></p>
+</li>
 </ul>
 <p>最终结果应该如下</p>
 <pre><code class="hljs plaintext">libs
@@ -505,5 +506,20 @@ target_link_libraries(Graphics PRIVATE
     </script>
 
 	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

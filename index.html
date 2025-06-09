@@ -185,7 +185,8 @@ libs
 └─lib
 安装 glfw
 去官网下载最新版 64-bit Windows binaries
-https://www.glfw.org/download.
+https://www.glfw.org/download.html
+打
 					...
 				</div>
 			</a>
@@ -203,8 +204,12 @@ https://www.glfw.org/download.
 					空间变换
 				</h2>
 				<div class="index-brief">
-					
-
+					齐次坐标
+为什么计算机图形学使用四维坐标 (w=1) 来表示三维点？
+这是一个计算机图形学中非常基础且核心的概念。简单来说，将三维坐标
+(x, y, z) 扩展成四维坐标 (x, y, z, 1)
+是为了使用齐次坐标 (Homogeneous
+Coordinates)。这样做主要有以下几个
 					...
 				</div>
 			</a>
@@ -231,7 +236,7 @@ highlight:
   enable: false
   line_number: false
   auto_detect: false
- 
+  tab_
 					...
 				</div>
 			</a>
@@ -283,5 +288,20 @@ highlight:
     </script>
 
 	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
