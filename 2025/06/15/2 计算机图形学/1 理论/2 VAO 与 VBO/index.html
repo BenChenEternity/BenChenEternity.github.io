@@ -374,59 +374,45 @@
 
 <!-- content -->
 <div id="article-content">
-	<h2 id="vao-vbo-概念">VAO &amp; VBO 概念</h2>
-<hr />
-<h3 id="vbo-vertex-buffer-object---顶点缓冲对象">VBO (Vertex Buffer
-Object) - 顶点缓冲对象</h3>
-<ul>
-<li><strong>作用</strong>: 在 <strong>GPU
-显存</strong>中存储大量的顶点数据（如坐标、颜色、法线等）。</li>
-<li><strong>目的</strong>:
-一次性将数据从CPU发送到GPU，避免每次绘制都重复传输，<strong>提升性能</strong>。</li>
-<li><strong>比喻</strong>:
-装满顶点数据的“<strong>数据仓库</strong>”，直接放在GPU里。</li>
+	<h2 id="VAO-amp-VBO-概念"><a href="#VAO-amp-VBO-概念" class="headerlink" title="VAO &amp; VBO 概念"></a>VAO &amp; VBO 概念</h2><hr>
+<h3 id="VBO-Vertex-Buffer-Object-顶点缓冲对象"><a href="#VBO-Vertex-Buffer-Object-顶点缓冲对象" class="headerlink" title="VBO (Vertex Buffer Object) - 顶点缓冲对象"></a>VBO (Vertex Buffer Object) - 顶点缓冲对象</h3><ul>
+<li><strong>作用</strong>: 在 <strong>GPU 显存</strong>中存储大量的顶点数据（如坐标、颜色、法线等）。</li>
+<li><strong>目的</strong>: 一次性将数据从CPU发送到GPU，避免每次绘制都重复传输，<strong>提升性能</strong>。</li>
+<li><strong>比喻</strong>: 装满顶点数据的“<strong>数据仓库</strong>”，直接放在GPU里。</li>
 </ul>
-<hr />
-<h3 id="vao-vertex-array-object---顶点数组对象">VAO (Vertex Array
-Object) - 顶点数组对象</h3>
-<ul>
-<li><strong>作用</strong>:
-存储顶点数据的<strong>状态配置</strong>和<strong>格式说明</strong>，它本身<strong>不存储</strong>顶点数据。</li>
-<li><strong>内容</strong>:
-<ul>
+<hr>
+<h3 id="VAO-Vertex-Array-Object-顶点数组对象"><a href="#VAO-Vertex-Array-Object-顶点数组对象" class="headerlink" title="VAO (Vertex Array Object) - 顶点数组对象"></a>VAO (Vertex Array Object) - 顶点数组对象</h3><ul>
+<li><strong>作用</strong>: 存储顶点数据的<strong>状态配置</strong>和<strong>格式说明</strong>，它本身<strong>不存储</strong>顶点数据。</li>
+<li><strong>内容</strong>:<ul>
 <li>对VBO的引用。</li>
-<li>顶点属性指针 (<code>glVertexAttribPointer</code>)
-的配置，即告诉GPU如何解析VBO中的数据（如数据类型、步长、偏移量等）。</li>
-</ul></li>
-<li><strong>目的</strong>:
-简化渲染流程，通过绑定一个VAO来快速应用一整套顶点数据状态。</li>
-<li><strong>比喻</strong>:
-VBO数据仓库的“<strong>使用说明书</strong>”。</li>
+<li>顶点属性指针 (<code>glVertexAttribPointer</code>) 的配置，即告诉GPU如何解析VBO中的数据（如数据类型、步长、偏移量等）。</li>
 </ul>
-<hr />
-<h3 id="协同工作流程">协同工作流程</h3>
-<ol type="1">
-<li><strong>初始化阶段 (一次性)</strong>
+</li>
+<li><strong>目的</strong>: 简化渲染流程，通过绑定一个VAO来快速应用一整套顶点数据状态。</li>
+<li><strong>比喻</strong>: VBO数据仓库的“<strong>使用说明书</strong>”。</li>
+</ul>
+<hr>
+<h3 id="协同工作流程"><a href="#协同工作流程" class="headerlink" title="协同工作流程"></a>协同工作流程</h3><ol>
+<li><p><strong>初始化阶段 (一次性)</strong></p>
 <ul>
 <li>创建并绑定 <strong>VBO</strong>，将顶点数据送入。</li>
 <li>创建并绑定 <strong>VAO</strong>。</li>
 <li>设置<strong>顶点属性指针</strong>，将VBO及其数据布局的配置信息记录在VAO中。</li>
 <li>全部解绑。</li>
-</ul></li>
-<li><strong>渲染循环阶段 (重复执行)</strong>
+</ul>
+</li>
+<li><p><strong>渲染循环阶段 (重复执行)</strong></p>
 <ul>
 <li>只需绑定需要绘制对象的 <strong>VAO</strong>。</li>
 <li>调用绘制命令 (如 <code>glDrawArrays</code>)。</li>
 <li>OpenGL会根据VAO的配置自动从对应的VBO中取用数据。</li>
-</ul></li>
+</ul>
+</li>
 </ol>
-<hr />
-<h3 id="核心优势">核心优势</h3>
-<ul>
-<li><strong>高效 (Efficiency)</strong>:
-VBO减少了数据传输，VAO减少了渲染循环中的API调用次数。</li>
-<li><strong>整洁 (Organization)</strong>:
-将复杂的初始化配置与渲染逻辑分离，代码更清晰。</li>
+<hr>
+<h3 id="核心优势"><a href="#核心优势" class="headerlink" title="核心优势"></a>核心优势</h3><ul>
+<li><strong>高效 (Efficiency)</strong>: VBO减少了数据传输，VAO减少了渲染循环中的API调用次数。</li>
+<li><strong>整洁 (Organization)</strong>: 将复杂的初始化配置与渲染逻辑分离，代码更清晰。</li>
 </ul>
 
 </div>
@@ -498,20 +484,5 @@ VBO减少了数据传输，VAO减少了渲染循环中的API调用次数。</li>
     </script>
 
 	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

@@ -374,37 +374,30 @@
 
 <!-- content -->
 <div id="article-content">
-	<h2 id="windows">windows</h2>
-<h3 id="创建库目录">创建库目录</h3>
-<p>根目录下创建文件夹 libs，创建两个子文件夹 lib 和 include</p>
+	<h2 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h2><h3 id="创建库目录"><a href="#创建库目录" class="headerlink" title="创建库目录"></a>创建库目录</h3><p>根目录下创建文件夹 libs，创建两个子文件夹 lib 和 include</p>
 <pre><code class="hljs plaintext">libs
 ├─include
 └─lib</code></pre>
-<h3 id="安装-glfw">安装 glfw</h3>
-<p>去官网下载最新版 <code>64-bit Windows binaries</code></p>
-<p>https://www.glfw.org/download.html</p>
+<h3 id="安装-glfw"><a href="#安装-glfw" class="headerlink" title="安装 glfw"></a>安装 glfw</h3><p>去官网下载最新版 <code>64-bit Windows binaries</code></p>
+<p><a target="_blank" rel="noopener" href="https://www.glfw.org/download.html">https://www.glfw.org/download.html</a></p>
 <p>打开下载的包</p>
 <ul>
-<li>把里面 <code>include</code> 下整个 <code>GLFW</code> 文件夹放进
-<code>libs/include</code></li>
+<li>把里面 <code>include</code> 下整个 <code>GLFW</code> 文件夹放进 <code>libs/include</code></li>
 </ul>
-<p>选择对应编译器下的文件夹，一般是 <code>lib-mingw-w64</code>
-，把里面的 ：</p>
+<p>选择对应编译器下的文件夹，一般是 <code>lib-mingw-w64</code> ，把里面的 ：</p>
 <ul>
 <li><code>.a</code> 文件放进 <code>libs/lib</code></li>
 <li><code>.dll</code> 文件放进 <code>cmake-build-debug</code></li>
 </ul>
-<h3 id="安装-glew">安装 glew</h3>
-<p>去官网下载最新版 <code>Windows 32-bit and 64-bit</code></p>
-<p>https://glew.sourceforge.net/index.html</p>
+<h3 id="安装-glew"><a href="#安装-glew" class="headerlink" title="安装 glew"></a>安装 glew</h3><p>去官网下载最新版 <code>Windows 32-bit and 64-bit</code></p>
+<p><a target="_blank" rel="noopener" href="https://glew.sourceforge.net/index.html">https://glew.sourceforge.net/index.html</a></p>
 <p>打开下载的包</p>
 <ul>
-<li><p>把里面 <code>include</code> 下整个 <code>GL</code> 文件夹放进
-<code>libs/include</code></p></li>
-<li><p>把 <code>lib\Release\x64</code> 下的 <code>.lib</code> 文件放入
-<code>libs/lib</code></p></li>
-<li><p>把 <code>bin\Release\x64</code> 下的 <code>.dll</code> 文件放入
-<code>cmake-build-debug</code></p></li>
+<li><p>把里面 <code>include</code> 下整个 <code>GL</code> 文件夹放进 <code>libs/include</code></p>
+</li>
+<li><p>把 <code>lib\Release\x64</code> 下的 <code>.lib</code> 文件放入 <code>libs/lib</code></p>
+</li>
+<li>把 <code>bin\Release\x64</code> 下的 <code>.dll</code> 文件放入 <code>cmake-build-debug</code></li>
 </ul>
 <p>最终结果应该如下</p>
 <pre><code class="hljs plaintext">libs
@@ -426,8 +419,7 @@
         glew32s.lib
         libglfw3.a (GLFW)
         libglfw3dll.a (GLFW)</code></pre>
-<h3 id="测试">测试</h3>
-<p>配置 <code>CMakeLists.txt</code> 示例如下，注意修改项目名称</p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>配置 <code>CMakeLists.txt</code> 示例如下，注意修改项目名称</p>
 <pre><code class="hljs plaintext"># CMake 最低版本要求 (使用你原来的版本)
 cmake_minimum_required(VERSION 3.30)
 
@@ -686,20 +678,5 @@ target_link_libraries(Graphics PRIVATE
     </script>
 
 	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
