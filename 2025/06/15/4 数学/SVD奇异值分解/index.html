@@ -377,112 +377,87 @@
 	<h2 id="奇异值分解">奇异值分解</h2>
 <h3 id="前置知识">前置知识</h3>
 <ul>
-<li><p>沿着特征向量方向伸缩对应对角矩阵</p></li>
-<li><p>旋转矩阵必是正交矩阵</p></li>
-<li><p>对于任意矩阵 <span class="math inline"><em>A</em></span>， <span
-class="math inline"><em>A</em><em>A</em><sup><em>T</em></sup></span> 和
-<span
-class="math inline"><em>A</em><sup><em>T</em></sup><em>A</em></span>
-一定是实对称矩阵，并且非0特征值相同</p></li>
-<li><p>实对称矩阵必可相似对角化</p></li>
-<li><p>正交矩阵 <span
-class="math inline"><em>Q</em><sup>−1</sup> = <em>Q</em><sup><em>T</em></sup></span>,
-<span
-class="math inline"><em>Q</em><em>Q</em><sup>−1</sup> = <em>Q</em><sup>−1</sup><em>Q</em> = <em>E</em></span></p></li>
+<li>
+<p>沿着特征向量方向伸缩对应对角矩阵</p>
+</li>
+<li>
+<p>旋转矩阵必是正交矩阵</p>
+</li>
+<li>
+<p>对于任意矩阵 $A$， $AA^T$ 和 $A^TA$ 一定是实对称矩阵，并且非0特征值相同</p>
+</li>
+<li>
+<p>实对称矩阵必可相似对角化</p>
+</li>
+<li>
+<p>正交矩阵 $Q^{-1} = Q^T$, $QQ^{-1} = Q^{-1}Q=E$</p>
+</li>
 </ul>
 <h3 id="本质">本质</h3>
 <p>奇异值分解的本质：任意变换能经过旋转、伸缩、再旋转三个步骤得到。</p>
-<p>即任何一个任意的矩阵都可以分解为一个正交矩阵、一个对角矩阵和另一个正交矩阵的转置的乘积
-<span
-class="math display"><em>P</em> = <em>U</em><em>Σ</em><em>V</em><sup><em>T</em></sup></span>
-其中 <span class="math inline"><em>U</em></span> 和 <span
-class="math inline"><em>V</em></span> 是正交矩阵，<span
-class="math inline"><em>Σ</em></span> 是对角矩阵</p>
+<p>即任何一个任意的矩阵都可以分解为一个正交矩阵、一个对角矩阵和另一个正交矩阵的转置的乘积<br>
+$$<br>
+P=U\Sigma V^T<br>
+$$<br>
+其中 $U$ 和 $V$ 是正交矩阵，$\Sigma$ 是对角矩阵</p>
 <h3 id="推导">推导</h3>
-<p>对于任意矩阵 <span
-class="math inline"><em>A</em></span>，构造实对称矩阵 <span
-class="math inline"><em>A</em><em>A</em><sup><em>T</em></sup></span> 和
-<span
-class="math inline"><em>A</em><sup><em>T</em></sup><em>A</em></span>
-<span
-class="math display"><em>A</em><em>A</em><sup><em>T</em></sup> = (<em>U</em><em>Σ</em><em>V</em><sup><em>T</em></sup>)(<em>U</em><em>Σ</em><em>V</em><sup><em>T</em></sup>)<sup><em>T</em></sup> = <em>U</em><em>Σ</em><em>V</em><sup><em>T</em></sup><em>V</em><em>Σ</em><sup><em>T</em></sup><em>U</em><sup><em>T</em></sup></span>
-正交矩阵 <span
-class="math inline"><em>V</em><em>V</em><sup><em>T</em></sup> = <em>E</em></span>
-并且对角矩阵 <span
-class="math inline"><em>Σ</em><sup><em>T</em></sup> = <em>Σ</em></span></p>
-<p>由于 <span
-class="math inline"><em>A</em><em>A</em><sup><em>T</em></sup></span>
-是实对称矩阵，所以可以分解为 <span
-class="math inline"><em>Q</em><sup><em>T</em></sup><em>Λ</em><em>Q</em></span>
-<span
-class="math display"><em>A</em><em>A</em><sup><em>T</em></sup> = <em>U</em><em>Σ</em><sup>2</sup><em>U</em><sup><em>T</em></sup> = <em>Q</em><sup><em>T</em></sup><em>Λ</em><em>Q</em></span>
-此时 <span class="math inline">$\Sigma=\sqrt{\Lambda}$</span> ，<span
-class="math inline"><em>U</em> = <em>Q</em><sup><em>T</em></sup></span></p>
-<p>对于 <span
-class="math inline"><em>A</em><sup><em>T</em></sup><em>A</em></span>
-同理</p>
-<p><strong>错误的办法</strong>：通过上面可以求出 <span
-class="math inline"><em>U</em></span> <span
-class="math inline"><em>Σ</em></span> <span
-class="math inline"><em>V</em></span> 三个值，实现分解。</p>
-<p>但是此时出现了问题，<span
-class="math inline">$\Sigma=\sqrt{\Lambda}$</span> 如果 <span
-class="math inline"><em>Λ</em></span>
-的某个特征值是负数呢？如果使用上面的办法，没法保证特征值是正的，所以导致特征向量（<span
-class="math inline"><em>U</em></span> 和 <span
-class="math inline"><em>V</em></span>
-对应的列向量）的方向是错误的，从而分解的 <span
-class="math inline"><em>U</em></span> 和 <span
-class="math inline"><em>V</em></span>
-也是错误的（负特征值对应的列向量正负号是相反的）。</p>
-<p><strong>分解结果修正</strong>： 所以我们要对结果进行修正 <span
-class="math display"><em>P</em> = <em>U</em><em>Σ</em><em>V</em><sup><em>T</em></sup></span>
-两边同时乘以 <span class="math inline"><em>V</em></span>，因为 <span
-class="math inline"><em>V</em><sup><em>T</em></sup><em>V</em> = <em>E</em></span>
-<span
-class="math display"><em>P</em><em>V</em> = <em>U</em><em>Σ</em></span>
-设 <span
-class="math inline"><em>V</em> = (<em>v</em><sub>1</sub>, <em>v</em><sub>2</sub>)</span>
-，<span
-class="math inline"><em>U</em> = (<em>u</em><sub>1</sub>, <em>u</em><sub>2</sub>)</span>
-<span class="math display">$$
-P(v_1,v_2)=(u_1,u_2)
-\begin{bmatrix}
-\lambda_1 &amp; 0 \\
-0 &amp; \lambda_2
-\end{bmatrix}
-$$</span> 化简得： <span
-class="math display">(<em>P</em><em>v</em><sub>1</sub>, <em>P</em><em>v</em><sub>2</sub>) = (<em>u</em><sub>1</sub><em>λ</em><sub>1</sub>, <em>u</em><sub>2</sub><em>λ</em><sub>2</sub>)</span>
-所以 <span class="math display">$$
-(u_1,u_2)=(\frac{Pv_1}{\lambda_1},\frac{Pv_2}{\lambda_2})
-$$</span> 这样得到的 <span
-class="math inline"><em>u</em><sub>1</sub></span> 和 <span
-class="math inline"><em>u</em><sub>2</sub></span> 是经过 <span
-class="math inline"><em>λ</em></span>
-修正过的，必然是正的。使用修正之后的 <span
-class="math inline"><em>U</em></span> <span
-class="math inline"><em>Σ</em></span> <span
-class="math inline"><em>V</em></span> 三个值，实现分解。</p>
+<p>对于任意矩阵 $A$，构造实对称矩阵 $AA^T$ 和 $A^TA$<br>
+$$<br>
+AA^T=(U\Sigma V^T)(U\Sigma V^T)^T=U\Sigma V^TV\Sigma^T U^T<br>
+$$<br>
+正交矩阵 $VV^T=E$ 并且对角矩阵 $\Sigma^T=\Sigma$</p>
+<p>由于 $AA^T$ 是实对称矩阵，所以可以分解为 $Q^T\Lambda Q$<br>
+$$<br>
+AA^T=U\Sigma^2U^T=Q^T\Lambda Q<br>
+$$<br>
+此时 $\Sigma=\sqrt{\Lambda}$ ，$U=Q^T$</p>
+<p>对于 $A^TA$ 同理</p>
+<p><strong>错误的办法</strong>：通过上面可以求出 $U$ $\Sigma$ $V$ 三个值，实现分解。</p>
+<p>但是此时出现了问题，$\Sigma=\sqrt{\Lambda}$ 如果 $\Lambda$ 的某个特征值是负数呢？如果使用上面的办法，没法保证特征值是正的，所以导致特征向量（$U$  和 $V$ 对应的列向量）的方向是错误的，从而分解的 $U$  和 $V$ 也是错误的（负特征值对应的列向量正负号是相反的）。</p>
+<p><strong>分解结果修正</strong>： 所以我们要对结果进行修正<br>
+$$<br>
+P=U\Sigma V^T<br>
+$$<br>
+两边同时乘以 $V$，因为 $V^TV=E$<br>
+$$<br>
+PV=U\Sigma<br>
+$$<br>
+设 $V=(v_1, v_2)$ ，$U=(u_1, u_2)$<br>
+$$<br>
+P(v_1,v_2)=(u_1,u_2)<br>
+\begin{bmatrix}<br>
+\lambda_1 &amp; 0 \<br>
+0 &amp; \lambda_2<br>
+\end{bmatrix}<br>
+$$<br>
+化简得：<br>
+$$<br>
+(Pv_1,Pv_2)=(u_1\lambda_1,u_2\lambda_2)<br>
+$$<br>
+所以<br>
+$$<br>
+(u_1,u_2)=(\frac{Pv_1}{\lambda_1},\frac{Pv_2}{\lambda_2})<br>
+$$<br>
+这样得到的 $u_1$ 和 $u_2$ 是经过 $\lambda$ 修正过的，必然是正的。使用修正之后的 $U$ $\Sigma$ $V$ 三个值，实现分解。</p>
 <h3 id="结论">结论</h3>
-<p>对于任意的矩阵 <span class="math inline"><em>P</em></span>，</p>
-<ol type="1">
-<li>如果 <span class="math inline"><em>P</em></span> 是方阵</li>
+<p>对于任意的矩阵 $P$，</p>
+<ol>
+<li>如果 $P$ 是方阵</li>
 </ol>
-<p><span
-class="math display"><em>P</em> = <em>U</em><em>Σ</em><em>V</em><sup><em>T</em></sup></span></p>
-<ol start="2" type="1">
-<li>如果 <span class="math inline"><em>P</em></span> 非方阵</li>
+<p>$$<br>
+P=U\Sigma V^T<br>
+$$</p>
+<ol start="2">
+<li>如果 $P$ 非方阵</li>
 </ol>
-<p><span class="math display">$$
-P_{m \times n} =
-\begin{cases}
-U \begin{bmatrix} \Sigma \\ O \end{bmatrix} V^T &amp; m &gt; n \\
-\\
-U \begin{bmatrix} \Sigma &amp; O \end{bmatrix} V^T &amp; m &lt; n
-\end{cases}
-$$</span></p>
-<p>$$</p>
-<p>$$</p>
+<p>$$<br>
+P_{m \times n} =<br>
+\begin{cases}<br>
+U \begin{bmatrix} \Sigma \ O \end{bmatrix} V^T &amp; m &gt; n \<br>
+\<br>
+U \begin{bmatrix} \Sigma &amp; O \end{bmatrix} V^T &amp; m &lt; n<br>
+\end{cases}<br>
+$$</p>
 
 </div>
 
