@@ -374,48 +374,73 @@
 
 <!-- content -->
 <div id="article-content">
-	<h3 id="1-图形管线-Graphics-Pipeline"><a href="#1-图形管线-Graphics-Pipeline" class="headerlink" title="1. 图形管线 (Graphics Pipeline)"></a>1. 图形管线 (Graphics Pipeline)</h3><ul>
-<li><strong>概念</strong>: 一个将抽象几何数据转换为最终屏幕像素的流水线处理过程。</li>
-<li><strong>流程</strong>: 顶点数据输入，经过顶点处理（坐标变换）、图元组装、光栅化（将矢量图形转为像素片元），最后通过片元处理（着色）输出到帧缓冲。</li>
-<li><strong>核心</strong>: 这是一个从逻辑空间到物理像素的、高度并行的转换系统。</li>
+	<h3 id="图形管线-graphics-pipeline">1. 图形管线 (Graphics Pipeline)</h3>
+<ul>
+<li><strong>概念</strong>:
+一个将抽象几何数据转换为最终屏幕像素的流水线处理过程。</li>
+<li><strong>流程</strong>:
+顶点数据输入，经过顶点处理（坐标变换）、图元组装、光栅化（将矢量图形转为像素片元），最后通过片元处理（着色）输出到帧缓冲。</li>
+<li><strong>核心</strong>:
+这是一个从逻辑空间到物理像素的、高度并行的转换系统。</li>
 </ul>
-<h3 id="2-着色器-Shaders"><a href="#2-着色器-Shaders" class="headerlink" title="2. 着色器 (Shaders)"></a>2. 着色器 (Shaders)</h3><ul>
-<li><strong>概念</strong>: 在图形处理单元（GPU）上运行的、用户定义的小型程序。</li>
-<li><strong>职责</strong>:<ul>
-<li><strong>顶点着色器</strong>: 定义几何体顶点的最终位置。(<code>输入: 顶点 -&gt; 输出: 裁剪空间坐标</code>)</li>
-<li><strong>片元着色器</strong>: 定义屏幕上每个像素片元的最终颜色。(<code>输入: 表面属性 -&gt; 输出: 颜色值</code>)</li>
+<h3 id="着色器-shaders">2. 着色器 (Shaders)</h3>
+<ul>
+<li><strong>概念</strong>:
+在图形处理单元（GPU）上运行的、用户定义的小型程序。</li>
+<li><strong>职责</strong>:
+<ul>
+<li><strong>顶点着色器</strong>:
+定义几何体顶点的最终位置。(<code>输入: 顶点 -&gt; 输出: 裁剪空间坐标</code>)</li>
+<li><strong>片元着色器</strong>:
+定义屏幕上每个像素片元的最终颜色。(<code>输入: 表面属性 -&gt; 输出: 颜色值</code>)</li>
+</ul></li>
+<li><strong>核心</strong>:
+赋予开发者在渲染管线的关键阶段（几何变换与着色）进行编程控制的能力。</li>
 </ul>
-</li>
-<li><strong>核心</strong>: 赋予开发者在渲染管线的关键阶段（几何变换与着色）进行编程控制的能力。</li>
-</ul>
-<h3 id="3-坐标系变换-Coordinate-System-Transformation"><a href="#3-坐标系变换-Coordinate-System-Transformation" class="headerlink" title="3. 坐标系变换 (Coordinate System Transformation)"></a>3. 坐标系变换 (Coordinate System Transformation)</h3><ul>
-<li><strong>概念</strong>: 通过矩阵乘法，将顶点从一个坐标空间变换到另一个坐标空间的过程。</li>
-<li><strong>标准流程 (MVP)</strong>:<ol>
-<li><strong>模型(Model)</strong>: 物体局部空间 -&gt; 世界空间 (定位物体)</li>
+<h3 id="坐标系变换-coordinate-system-transformation">3. 坐标系变换
+(Coordinate System Transformation)</h3>
+<ul>
+<li><strong>概念</strong>:
+通过矩阵乘法，将顶点从一个坐标空间变换到另一个坐标空间的过程。</li>
+<li><strong>标准流程 (MVP)</strong>:
+<ol type="1">
+<li><strong>模型(Model)</strong>: 物体局部空间 -&gt; 世界空间
+(定位物体)</li>
 <li><strong>视图(View)</strong>: 世界空间 -&gt; 观察空间 (定义视点)</li>
-<li><strong>投影(Projection)</strong>: 观察空间 -&gt; 裁剪空间 (应用透视，准备2D映射)</li>
-</ol>
-</li>
-<li><strong>核心</strong>: 建立一套数学框架，用于在二维屏幕上模拟三维世界的布局与观察。</li>
+<li><strong>投影(Projection)</strong>: 观察空间 -&gt; 裁剪空间
+(应用透视，准备2D映射)</li>
+</ol></li>
+<li><strong>核心</strong>:
+建立一套数学框架，用于在二维屏幕上模拟三维世界的布局与观察。</li>
 </ul>
-<h3 id="4-缓冲对象与状态管理-Buffer-Objects-amp-State-Management"><a href="#4-缓冲对象与状态管理-Buffer-Objects-amp-State-Management" class="headerlink" title="4. 缓冲对象与状态管理 (Buffer Objects &amp; State Management)"></a>4. 缓冲对象与状态管理 (Buffer Objects &amp; State Management)</h3><ul>
-<li><strong>概念</strong>: 一种数据管理策略，用于在CPU和GPU之间高效地传输和访问数据。</li>
-<li><strong>机制</strong>:<ul>
-<li><strong>缓冲对象 (e.g., VBO)</strong>: 在GPU上分配专用内存，用于存储几何体、纹理等大数据块。</li>
-<li><strong>状态对象 (e.g., VAO)</strong>: 封装渲染所需的所有状态配置（如数据格式、缓冲绑定），以简化渲染调用。</li>
+<h3 id="缓冲对象与状态管理-buffer-objects-state-management">4.
+缓冲对象与状态管理 (Buffer Objects &amp; State Management)</h3>
+<ul>
+<li><strong>概念</strong>:
+一种数据管理策略，用于在CPU和GPU之间高效地传输和访问数据。</li>
+<li><strong>机制</strong>:
+<ul>
+<li><strong>缓冲对象 (e.g., VBO)</strong>:
+在GPU上分配专用内存，用于存储几何体、纹理等大数据块。</li>
+<li><strong>状态对象 (e.g., VAO)</strong>:
+封装渲染所需的所有状态配置（如数据格式、缓冲绑定），以简化渲染调用。</li>
+</ul></li>
+<li><strong>核心</strong>:
+将数据与指令分离，最小化CPU到GPU的通信开销，实现高性能渲染。</li>
 </ul>
-</li>
-<li><strong>核心</strong>: 将数据与指令分离，最小化CPU到GPU的通信开销，实现高性能渲染。</li>
-</ul>
-<h3 id="5-渲染循环-The-Render-Loop"><a href="#5-渲染循环-The-Render-Loop" class="headerlink" title="5. 渲染循环 (The Render Loop)"></a>5. 渲染循环 (The Render Loop)</h3><ul>
-<li><strong>概念</strong>: 实时图形应用的心跳，一个持续执行的无限循环。</li>
-<li><strong>基本步骤</strong>:<ol>
+<h3 id="渲染循环-the-render-loop">5. 渲染循环 (The Render Loop)</h3>
+<ul>
+<li><strong>概念</strong>:
+实时图形应用的心跳，一个持续执行的无限循环。</li>
+<li><strong>基本步骤</strong>:
+<ol type="1">
 <li><strong>输入 (Input)</strong>: 处理用户交互。</li>
-<li><strong>更新 (Update)</strong>: 更新场景状态（如物体位置、动画）。</li>
+<li><strong>更新 (Update)</strong>:
+更新场景状态（如物体位置、动画）。</li>
 <li><strong>渲染 (Render)</strong>: 执行绘图指令，生成一帧图像。</li>
-</ol>
-</li>
-<li><strong>核心</strong>: 通过以高频率（如60 FPS）重复生成静态图像，创造出连续运动的视觉效果。</li>
+</ol></li>
+<li><strong>核心</strong>: 通过以高频率（如60
+FPS）重复生成静态图像，创造出连续运动的视觉效果。</li>
 </ul>
 
 </div>
@@ -487,5 +512,20 @@
     </script>
 
 	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>

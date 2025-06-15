@@ -465,10 +465,12 @@ mjx-container[display="true"] + br {
 					1 方程绪论
 				</h2>
 				<div class="index-brief">
-					质量守恒方程（连续性方程）质量守恒定律的微分形式，也称为连续性方程，描述了流体在空间中任意一点的密度变化率与该点周围的质量流出（或流入）速率之间的关系。
+					质量守恒方程（连续性方程）
+质量守恒定律的微分形式，也称为连续性方程，描述了流体在空间中任意一点的密度变化率与该点周围的质量流出（或流入）速率之间的关系。
 
-\nabla \cdot (\rho \mathbf{v}) + \frac{\partial \rho}{\partial t} = 0
-动量
+
+动量守恒方程（N-S方程）
+动量守恒方程，对于牛顿流体，通常被称为纳维-斯托克斯方程。它描述了单位体积流体的动量变化是由作用于其上
 					...
 				</div>
 			</a>
@@ -486,13 +488,15 @@ mjx-container[display="true"] + br {
 					1 openGL环境安装
 				</h2>
 				<div class="index-brief">
-					windows创建库目录根目录下创建文件夹 libs，创建两个子文件夹 lib 和 include
+					windows
+创建库目录
+根目录下创建文件夹 libs，创建两个子文件夹 lib 和 include
 libs
 ├─include
 └─lib
-安装 glfw去官网下载最新版 64-bit Windows binaries
-https://www.glfw.org/download.html
-打开下载
+安装 glfw
+去官网下载最新版 64-bit Windows binaries
+https://www.glfw.org/download.
 					...
 				</div>
 			</a>
@@ -510,8 +514,12 @@ https://www.glfw.org/download.html
 					3 图形学 空间变换
 				</h2>
 				<div class="index-brief">
-					齐次坐标为什么计算机图形学使用四维坐标 (w=1) 来表示三维点？
-这是一个计算机图形学中非常基础且核心的概念。简单来说，将三维坐标 (x, y, z) 扩展成四维坐标 (x, y, z, 1) 是为了使用齐次坐标 (Homogeneous Coordinates)。这样做主要有以下几个至关重要的原
+					齐次坐标
+为什么计算机图形学使用四维坐标 (w=1) 来表示三维点？
+这是一个计算机图形学中非常基础且核心的概念。简单来说，将三维坐标
+(x, y, z) 扩展成四维坐标 (x, y, z, 1)
+是为了使用齐次坐标 (Homogeneous
+Coordinates)。这样做主要有以下几个
 					...
 				</div>
 			</a>
@@ -529,14 +537,16 @@ https://www.glfw.org/download.html
 					1 配置
 				</h2>
 				<div class="index-brief">
-					图片管理使用 picgo + github 图床
+					图片管理
+使用 picgo + github 图床
 https://picgo.github.io/PicGo-Doc/
-代码块配置文件中这样修改
+代码块
+配置文件中这样修改
 highlight:
   enable: false
   line_number: false
   auto_detect: false
-  tab_re
+ 
 					...
 				</div>
 			</a>
@@ -590,5 +600,20 @@ highlight:
     </script>
 
 	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 </html>
