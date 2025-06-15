@@ -9,6 +9,8 @@
 	
 		<title>
 			
+				2 配置着色器 |
+					
 						Note
 		</title>
 
@@ -211,7 +213,7 @@
 							</ul>
 			
 							<ul>
-								<li class="file">
+								<li class="file active">
 									<a href="/2025/06/15/2%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/2%20%E5%AE%9E%E8%B7%B5/2%20%E9%85%8D%E7%BD%AE%E7%9D%80%E8%89%B2%E5%99%A8/">
                      
 										    2 配置着色器
@@ -345,265 +347,124 @@
 
 	<!-- 引入正文 -->
 	<div id="content" class="content">
-		<div id="index">
-	
-		<div class="index-li">
-			<a href="/2025/06/15/4%20%E6%95%B0%E5%AD%A6/SVD%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/">
-				<h2 class="index-title">
-					奇异值分解
-				</h2>
-				<div class="index-brief">
-					奇异值分解
-前置知识
+		<h1 id="article-title">
+	2 配置着色器
+</h1>
 
-沿着特征向量方向伸缩对应对角矩阵
-旋转矩阵必是正交矩阵
-对于任意矩阵 A， <span
-class="math inline">AAT 和
-<span
-class="math inline">ATA
-一定是实对称矩阵，并且非0特征值相同
-实对称矩阵必可相似
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-15</span>
-                    
-                            
-                    
-                </div>
-		</div>	
+<!-- meta -->
+<div class="article-meta">
 	
-		<div class="index-li">
-			<a href="/2025/06/15/2%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/2%20%E5%AE%9E%E8%B7%B5/2%20%E9%85%8D%E7%BD%AE%E7%9D%80%E8%89%B2%E5%99%A8/">
-				<h2 class="index-title">
-					2 配置着色器
-				</h2>
-				<div class="index-brief">
-					.vert 文件
-// 指定 GLSL 版本为 3.30，并使用核心模式(Core-profile)
-#version 330 core
 
-// --- 输入变量 (Vertex Attributes) ---
-// 从 VBO 接收顶点数据。layout(location = N) 将变量绑定到
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-15</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/15/2%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/1%20%E7%90%86%E8%AE%BA/1%20%E7%BB%AA%E8%AE%BA/">
-				<h2 class="index-title">
-					1 绪论
-				</h2>
-				<div class="index-brief">
-					1. 图形管线 (Graphics Pipeline)
+	<span>NicolasDavout</span>
+	<span>2025-06-15 19:02:00</span>
 
-概念:
-一个将抽象几何数据转换为最终屏幕像素的流水线处理过程。
-流程:
-顶点数据输入，经过顶点处理（坐标变换）、图元组装、光栅化（将矢量图形转为像素片元），最后通过片元处理（着色）输出到帧缓冲。
-核心:
-这是一个从逻辑空间到物理
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-15</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/15/2%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/1%20%E7%90%86%E8%AE%BA/2%20VAO%20%E4%B8%8E%20VBO/">
-				<h2 class="index-title">
-					2 VAO 与 VBO
-				</h2>
-				<div class="index-brief">
-					VAO &amp; VBO 概念
+  <div id="article-categories">
+    
+		  <span>Categories：</span>
+      
+    
 
-VBO (Vertex Buffer
-Object) - 顶点缓冲对象
+    
+		    <span>Tags：</span>
+        
+    
+  </div>
 
-作用: 在 GPU
-显存中存储大量的顶点数据（如坐标、颜色、法线等）。
-目的:
-一次性将数据从CPU发送到GPU，避免每次绘制都重复传输，提升性能。
-比喻:
-装满顶点数据
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-15</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/15/1%20hexo/2%20%E7%BC%96%E5%8F%B7%E5%B0%8F%E5%B7%A5%E5%85%B7/">
-				<h2 class="index-title">
-					2 编号小工具
-				</h2>
-				<div class="index-brief">
-					背景
-文章需要编号，但是如果中间插入一章，那么后续编号就要整体后移。所以自己使用谷歌Gemini写了一个小编排器。
-下载
-<a
-href="https://raw.githubusercontent.com/BenChenEternity/Images/main/hexo%E9%A1%BA%
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-15</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/14/minecraft/04-Cisco-s-Fantasy-Medieval/">
-				<h2 class="index-title">
-					04 Cisco's Fantasy Medieval
-				</h2>
-				<div class="index-brief">
-					Cisco’s Fantasy Medieval
-时间:2025.4.29 ~ 2025.5.21
-落榜美术生
-<img
-src="https://raw.githubusercontent.com/BenChenEternity/Images/main/20250614112020359.
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-14</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/14/minecraft/03%20%E5%B9%B8%E8%BF%90%E4%B8%96%E7%95%8C%E5%85%A5%E4%BE%B5/">
-				<h2 class="index-title">
-					03 幸运世界入侵
-				</h2>
-				<div class="index-brief">
-					幸运世界入侵
-时间:2025-4-10 ~ 2025.4.29
-麦的草神女仆
-<img
-src="https://raw.githubusercontent.com/BenChenEternity/Images/main/20250614111253822.jpg" />
-结档——合影1
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-14</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/13/minecraft/02%20%E8%84%86%E9%AA%A8%E7%97%87/">
-				<h2 class="index-title">
-					02 脆骨症
-				</h2>
-				<div class="index-brief">
-					脆骨症
-时间: 2024-2-3 ~ 2025-2-24
-机械动力入门设计
-<img
-src="https://raw.githubusercontent.com/BenChenEternity/Images/main/20250613224541332.jpg" />
-风车应力阵列
-<
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-13</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/13/minecraft/01%20Better%20MC/">
-				<h2 class="index-title">
-					01 Better MC
-				</h2>
-				<div class="index-brief">
-					Better MC
-时间: 2024-12-25 ~ 2025-2-2
-注：补拍照片
-自行设计的基于存储终端的120倍高速熔炉，存在区块bug，矿车会飞走，地毯会卡死世界
-<img
-src="https://raw.githubusercontent.com/BenChenEternity
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-13</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/09/3%20%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/2%20%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/">
-				<h2 class="index-title">
-					2 伯努利方程
-				</h2>
-				<div class="index-brief">
-					表达式
-前提：无粘定常流场，由N-S方程推导
-原表达式
-沿着流线或在无旋场处处  可以变换为  其中
-
-z
-是位置水头，单位重力流体势能
-
-是压力水头，单位重力流体压力能
-
-是速度水头，单位重力流体动能
-
-理想流体总流的表达式
-理想流体：没有机械能损失
-在总流中任取两个缓
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-09</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-	
-	<div id="index-paginator">
-		
-			<span class="page-number current">1</span><a class="page-number" href="/archives/2025/06/page/2/">2</a><a class="extend next" rel="next" href="/archives/2025/06/page/2/">&gt;</a>
-		
-	</div>
 </div>
+
+<!-- content -->
+<div id="article-content">
+	<h2 id="vert-文件">.vert 文件</h2>
+<pre><code class="hljs glsl"><span class="hljs-comment">// 指定 GLSL 版本为 3.30，并使用核心模式(Core-profile)</span>
+<span class="hljs-meta">#version 330 core</span>
+
+<span class="hljs-comment">// --- 输入变量 (Vertex Attributes) ---</span>
+<span class="hljs-comment">// 从 VBO 接收顶点数据。layout(location = N) 将变量绑定到第 N 个顶点属性。</span>
+
+<span class="hljs-comment">// layout(location = 0): 绑定到第0个属性，通常是位置数据</span>
+<span class="hljs-comment">// in vec3: 输入一个三维向量</span>
+<span class="hljs-comment">// aPos: 变量名，代表顶点位置 (Position)</span>
+<span class="hljs-keyword">layout</span> (<span class="hljs-keyword">location</span> = <span class="hljs-number">0</span>) <span class="hljs-keyword">in</span> <span class="hljs-type">vec3</span> aPos;
+
+<span class="hljs-comment">// layout(location = 1): 绑定到第1个属性，通常是颜色数据</span>
+<span class="hljs-comment">// aColor: 变量名，代表顶点颜色 (Color)</span>
+<span class="hljs-keyword">layout</span> (<span class="hljs-keyword">location</span> = <span class="hljs-number">1</span>) <span class="hljs-keyword">in</span> <span class="hljs-type">vec3</span> aColor;
+
+
+<span class="hljs-comment">// --- 输出变量 ---</span>
+<span class="hljs-comment">// 将数据传递给下一个着色器阶段（片元着色器）</span>
+
+<span class="hljs-comment">// out vec3: 输出一个三维向量</span>
+<span class="hljs-comment">// ourColor: 变量名，用于将颜色传递出去</span>
+<span class="hljs-keyword">out</span> <span class="hljs-type">vec3</span> ourColor;
+
+
+<span class="hljs-comment">// --- 全局变量 (Uniforms) ---</span>
+<span class="hljs-comment">// 从 CPU 程序传入的、对所有顶点都相同的全局变量</span>
+
+<span class="hljs-comment">// mat4: 4x4 矩阵类型</span>
+<span class="hljs-comment">// model: 模型矩阵 (将模型局部坐标 -&gt; 世界坐标)</span>
+<span class="hljs-comment">// view: 视图矩阵 (将世界坐标 -&gt; 观察空间坐标)</span>
+<span class="hljs-comment">// projection: 投影矩阵 (将观察空间坐标 -&gt; 裁剪空间坐标)</span>
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">mat4</span> model;
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">mat4</span> view;
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">mat4</span> projection;
+
+
+<span class="hljs-comment">// --- 主函数 ---</span>
+<span class="hljs-comment">// 每个顶点都会执行一次 main 函数</span>
+<span class="hljs-type">void</span> main()
+&#123;
+    <span class="hljs-comment">// gl_Position 是一个内置的、必须被赋值的 vec4 输出变量</span>
+    <span class="hljs-comment">// 它决定了顶点在屏幕上的最终位置</span>
+    <span class="hljs-comment">// 计算过程：通过 MVP 矩阵链式相乘，将顶点从局部空间变换到裁剪空间</span>
+    <span class="hljs-comment">// 注意：矩阵乘法顺序为 投影 * 视图 * 模型</span>
+    <span class="hljs-comment">// vec4(aPos, 1.0) 是将三维位置坐标转换为四维齐次坐标，w分量为1.0</span>
+    <span class="hljs-built_in">gl_Position</span> = projection * view * model * <span class="hljs-type">vec4</span>(aPos, <span class="hljs-number">1.0</span>);
+
+    <span class="hljs-comment">// 将输入的顶点颜色直接赋值给输出变量</span>
+    <span class="hljs-comment">// 这个颜色值会经过插值后，传递给片元着色器</span>
+    ourColor = aColor;
+&#125;
+
+<span class="hljs-comment">// 总结：</span>
+<span class="hljs-comment">// 1. 主要任务：计算每个顶点的最终裁剪空间位置 (gl_Position)。</span>
+<span class="hljs-comment">// 2. 附加任务：将顶点颜色 (aColor) 原封不动地传递给片元着色器 (ourColor)。</span></code></pre>
+
+</div>
+
+<!-- post-guide -->
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2025/06/15/4%20%E6%95%B0%E5%AD%A6/SVD%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  奇异值分解
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2025/06/15/2%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/1%20%E7%90%86%E8%AE%BA/1%20%E7%BB%AA%E8%AE%BA/">
+                1 绪论
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+<!-- comment - giscus -->
+
+
+<!-- comment - valine -->
+
+
+<script>
+	
+	
+</script>
 
 	</div>
 	<div id="footer">

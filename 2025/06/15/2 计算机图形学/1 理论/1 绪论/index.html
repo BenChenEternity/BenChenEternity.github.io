@@ -9,6 +9,8 @@
 	
 		<title>
 			
+				1 绪论 |
+					
 						Note
 		</title>
 
@@ -156,7 +158,7 @@
 									</a>
 									
 							<ul>
-								<li class="file">
+								<li class="file active">
 									<a href="/2025/06/15/2%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/1%20%E7%90%86%E8%AE%BA/1%20%E7%BB%AA%E8%AE%BA/">
                      
 										    1 绪论
@@ -345,265 +347,136 @@
 
 	<!-- 引入正文 -->
 	<div id="content" class="content">
-		<div id="index">
-	
-		<div class="index-li">
-			<a href="/2025/06/15/4%20%E6%95%B0%E5%AD%A6/SVD%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3/">
-				<h2 class="index-title">
-					奇异值分解
-				</h2>
-				<div class="index-brief">
-					奇异值分解
-前置知识
+		<h1 id="article-title">
+	1 绪论
+</h1>
 
-沿着特征向量方向伸缩对应对角矩阵
-旋转矩阵必是正交矩阵
-对于任意矩阵 A， <span
-class="math inline">AAT 和
-<span
-class="math inline">ATA
-一定是实对称矩阵，并且非0特征值相同
-实对称矩阵必可相似
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-15</span>
-                    
-                            
-                    
-                </div>
-		</div>	
+<!-- meta -->
+<div class="article-meta">
 	
-		<div class="index-li">
-			<a href="/2025/06/15/2%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/2%20%E5%AE%9E%E8%B7%B5/2%20%E9%85%8D%E7%BD%AE%E7%9D%80%E8%89%B2%E5%99%A8/">
-				<h2 class="index-title">
-					2 配置着色器
-				</h2>
-				<div class="index-brief">
-					.vert 文件
-// 指定 GLSL 版本为 3.30，并使用核心模式(Core-profile)
-#version 330 core
 
-// --- 输入变量 (Vertex Attributes) ---
-// 从 VBO 接收顶点数据。layout(location = N) 将变量绑定到
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-15</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/15/2%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/1%20%E7%90%86%E8%AE%BA/1%20%E7%BB%AA%E8%AE%BA/">
-				<h2 class="index-title">
-					1 绪论
-				</h2>
-				<div class="index-brief">
-					1. 图形管线 (Graphics Pipeline)
+	<span>NicolasDavout</span>
+	<span>2025-06-15 18:47:13</span>
 
-概念:
-一个将抽象几何数据转换为最终屏幕像素的流水线处理过程。
-流程:
-顶点数据输入，经过顶点处理（坐标变换）、图元组装、光栅化（将矢量图形转为像素片元），最后通过片元处理（着色）输出到帧缓冲。
-核心:
-这是一个从逻辑空间到物理
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-15</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/15/2%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/1%20%E7%90%86%E8%AE%BA/2%20VAO%20%E4%B8%8E%20VBO/">
-				<h2 class="index-title">
-					2 VAO 与 VBO
-				</h2>
-				<div class="index-brief">
-					VAO &amp; VBO 概念
+  <div id="article-categories">
+    
+		  <span>Categories：</span>
+      
+    
 
-VBO (Vertex Buffer
-Object) - 顶点缓冲对象
+    
+		    <span>Tags：</span>
+        
+    
+  </div>
 
-作用: 在 GPU
-显存中存储大量的顶点数据（如坐标、颜色、法线等）。
-目的:
-一次性将数据从CPU发送到GPU，避免每次绘制都重复传输，提升性能。
-比喻:
-装满顶点数据
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-15</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/15/1%20hexo/2%20%E7%BC%96%E5%8F%B7%E5%B0%8F%E5%B7%A5%E5%85%B7/">
-				<h2 class="index-title">
-					2 编号小工具
-				</h2>
-				<div class="index-brief">
-					背景
-文章需要编号，但是如果中间插入一章，那么后续编号就要整体后移。所以自己使用谷歌Gemini写了一个小编排器。
-下载
-<a
-href="https://raw.githubusercontent.com/BenChenEternity/Images/main/hexo%E9%A1%BA%
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-15</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/14/minecraft/04-Cisco-s-Fantasy-Medieval/">
-				<h2 class="index-title">
-					04 Cisco's Fantasy Medieval
-				</h2>
-				<div class="index-brief">
-					Cisco’s Fantasy Medieval
-时间:2025.4.29 ~ 2025.5.21
-落榜美术生
-<img
-src="https://raw.githubusercontent.com/BenChenEternity/Images/main/20250614112020359.
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-14</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/14/minecraft/03%20%E5%B9%B8%E8%BF%90%E4%B8%96%E7%95%8C%E5%85%A5%E4%BE%B5/">
-				<h2 class="index-title">
-					03 幸运世界入侵
-				</h2>
-				<div class="index-brief">
-					幸运世界入侵
-时间:2025-4-10 ~ 2025.4.29
-麦的草神女仆
-<img
-src="https://raw.githubusercontent.com/BenChenEternity/Images/main/20250614111253822.jpg" />
-结档——合影1
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-14</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/13/minecraft/02%20%E8%84%86%E9%AA%A8%E7%97%87/">
-				<h2 class="index-title">
-					02 脆骨症
-				</h2>
-				<div class="index-brief">
-					脆骨症
-时间: 2024-2-3 ~ 2025-2-24
-机械动力入门设计
-<img
-src="https://raw.githubusercontent.com/BenChenEternity/Images/main/20250613224541332.jpg" />
-风车应力阵列
-<
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-13</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/13/minecraft/01%20Better%20MC/">
-				<h2 class="index-title">
-					01 Better MC
-				</h2>
-				<div class="index-brief">
-					Better MC
-时间: 2024-12-25 ~ 2025-2-2
-注：补拍照片
-自行设计的基于存储终端的120倍高速熔炉，存在区块bug，矿车会飞走，地毯会卡死世界
-<img
-src="https://raw.githubusercontent.com/BenChenEternity
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-13</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-		<div class="index-li">
-			<a href="/2025/06/09/3%20%E6%B5%81%E4%BD%93%E5%8A%9B%E5%AD%A6/2%20%E4%BC%AF%E5%8A%AA%E5%88%A9%E6%96%B9%E7%A8%8B/">
-				<h2 class="index-title">
-					2 伯努利方程
-				</h2>
-				<div class="index-brief">
-					表达式
-前提：无粘定常流场，由N-S方程推导
-原表达式
-沿着流线或在无旋场处处  可以变换为  其中
-
-z
-是位置水头，单位重力流体势能
-
-是压力水头，单位重力流体压力能
-
-是速度水头，单位重力流体动能
-
-理想流体总流的表达式
-理想流体：没有机械能损失
-在总流中任取两个缓
-					...
-				</div>
-			</a>
-                <div class="article-meta">
-				    <span>2025-06-09</span>
-                    
-                            
-                    
-                </div>
-		</div>	
-	
-	
-	<div id="index-paginator">
-		
-			<span class="page-number current">1</span><a class="page-number" href="/archives/2025/06/page/2/">2</a><a class="extend next" rel="next" href="/archives/2025/06/page/2/">&gt;</a>
-		
-	</div>
 </div>
+
+<!-- content -->
+<div id="article-content">
+	<h3 id="图形管线-graphics-pipeline">1. 图形管线 (Graphics Pipeline)</h3>
+<ul>
+<li><strong>概念</strong>:
+一个将抽象几何数据转换为最终屏幕像素的流水线处理过程。</li>
+<li><strong>流程</strong>:
+顶点数据输入，经过顶点处理（坐标变换）、图元组装、光栅化（将矢量图形转为像素片元），最后通过片元处理（着色）输出到帧缓冲。</li>
+<li><strong>核心</strong>:
+这是一个从逻辑空间到物理像素的、高度并行的转换系统。</li>
+</ul>
+<h3 id="着色器-shaders">2. 着色器 (Shaders)</h3>
+<ul>
+<li><strong>概念</strong>:
+在图形处理单元（GPU）上运行的、用户定义的小型程序。</li>
+<li><strong>职责</strong>:
+<ul>
+<li><strong>顶点着色器</strong>:
+定义几何体顶点的最终位置。(<code>输入: 顶点 -&gt; 输出: 裁剪空间坐标</code>)</li>
+<li><strong>片元着色器</strong>:
+定义屏幕上每个像素片元的最终颜色。(<code>输入: 表面属性 -&gt; 输出: 颜色值</code>)</li>
+</ul></li>
+<li><strong>核心</strong>:
+赋予开发者在渲染管线的关键阶段（几何变换与着色）进行编程控制的能力。</li>
+</ul>
+<h3 id="坐标系变换-coordinate-system-transformation">3. 坐标系变换
+(Coordinate System Transformation)</h3>
+<ul>
+<li><strong>概念</strong>:
+通过矩阵乘法，将顶点从一个坐标空间变换到另一个坐标空间的过程。</li>
+<li><strong>标准流程 (MVP)</strong>:
+<ol type="1">
+<li><strong>模型(Model)</strong>: 物体局部空间 -&gt; 世界空间
+(定位物体)</li>
+<li><strong>视图(View)</strong>: 世界空间 -&gt; 观察空间 (定义视点)</li>
+<li><strong>投影(Projection)</strong>: 观察空间 -&gt; 裁剪空间
+(应用透视，准备2D映射)</li>
+</ol></li>
+<li><strong>核心</strong>:
+建立一套数学框架，用于在二维屏幕上模拟三维世界的布局与观察。</li>
+</ul>
+<h3 id="缓冲对象与状态管理-buffer-objects-state-management">4.
+缓冲对象与状态管理 (Buffer Objects &amp; State Management)</h3>
+<ul>
+<li><strong>概念</strong>:
+一种数据管理策略，用于在CPU和GPU之间高效地传输和访问数据。</li>
+<li><strong>机制</strong>:
+<ul>
+<li><strong>缓冲对象 (e.g., VBO)</strong>:
+在GPU上分配专用内存，用于存储几何体、纹理等大数据块。</li>
+<li><strong>状态对象 (e.g., VAO)</strong>:
+封装渲染所需的所有状态配置（如数据格式、缓冲绑定），以简化渲染调用。</li>
+</ul></li>
+<li><strong>核心</strong>:
+将数据与指令分离，最小化CPU到GPU的通信开销，实现高性能渲染。</li>
+</ul>
+<h3 id="渲染循环-the-render-loop">5. 渲染循环 (The Render Loop)</h3>
+<ul>
+<li><strong>概念</strong>:
+实时图形应用的心跳，一个持续执行的无限循环。</li>
+<li><strong>基本步骤</strong>:
+<ol type="1">
+<li><strong>输入 (Input)</strong>: 处理用户交互。</li>
+<li><strong>更新 (Update)</strong>:
+更新场景状态（如物体位置、动画）。</li>
+<li><strong>渲染 (Render)</strong>: 执行绘图指令，生成一帧图像。</li>
+</ol></li>
+<li><strong>核心</strong>: 通过以高频率（如60
+FPS）重复生成静态图像，创造出连续运动的视觉效果。</li>
+</ul>
+
+</div>
+
+<!-- post-guide -->
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2025/06/15/2%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/2%20%E5%AE%9E%E8%B7%B5/2%20%E9%85%8D%E7%BD%AE%E7%9D%80%E8%89%B2%E5%99%A8/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  2 配置着色器
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2025/06/15/2%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/1%20%E7%90%86%E8%AE%BA/2%20VAO%20%E4%B8%8E%20VBO/">
+                2 VAO 与 VBO
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+<!-- comment - giscus -->
+
+
+<!-- comment - valine -->
+
+
+<script>
+	
+	
+</script>
 
 	</div>
 	<div id="footer">
